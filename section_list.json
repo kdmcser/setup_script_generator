@@ -1,0 +1,84 @@
+[
+  {
+    "name": "主程序",
+    "desc": "VCMI 主程序，提供核心文件，原始9族、官方地图、战役。（必须安装）",
+    "files": {
+      "main": ".",
+      "Data": "Data",
+      "Maps": "Maps",
+      "MP3": "MP3",
+      "Sprites": "Sprites",
+      "Mods/GBK Chinese Fonts": "Mods/GBK Chinese Fonts",
+      "config": {"dest": "$DOCUMENTS/My Games/vcmi/config", "overwrite": "try", "need_uninstall":  false}
+    },
+    "install_types": ["RO"]
+  },
+  {
+    "name": "箭塔图标",
+    "desc": "VCMI战斗行动条（Q键调出）中的箭塔图标，建议安装，否则会是空白。",
+    "files": {
+      "Mods/arrowTowerIcons": "Mods/arrowTowerIcons"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod", "原版游戏"]
+  },
+  {
+    "name": "战役英雄",
+    "desc": "允许使用战役特殊英雄（格鲁、德肯、凯瑟琳、埃德妮等）。",
+    "files": {
+      "Mods/CampaignHeroes": "Mods/CampaignHeroes"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod", "原版游戏"]
+  },
+
+  {
+    "name": "新种族-家园",
+    "desc": "英雄无敌2女巫族。",
+    "files": {
+      "Mods/abode-mod": "Mods/abode-mod"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-梦境",
+    "desc": "刚出圣龙大神做的心灵族，UI很赞。",
+    "files": {
+      "Mods/asylum": "Mods/asylum"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "新怪物宝屋-亚巴顿之柱",
+    "desc": "尸巫王、玛格和怪物守护的宝屋，击败后获得8000金币和若干资源，宝物、魔法奖励。",
+    "files": {
+      "Mods/abaddonColumn": "Mods/abaddonColumn"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "Andruids Mod包",
+    "desc": "Andruids大神制作的Mod包合集，包含: 诅咒之国宝屋（骨龙、尸巫，大量奖励）、新技能主动性（提高军队速度）、新技能增幅术（提高魔法生物伤害）、地下城新英雄沙利文（特长增幅术）",
+    "files": {
+      "Mods/Andruids Expansion": "Mods/Andruids Expansion"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "AI调试",
+    "desc": "把AI行为输出到控制台和日志文件中，便于开发人员排查问题。",
+    "files": {
+      "Mods/AI trace": "Mods/AI trace"
+    },
+    "install_types": ["全部Mod"]
+  },
+
+  {
+    "name": "界面美化",
+    "desc": "wog界面美化mod移植，重置了大部分游戏界面，主色调为蓝色。",
+    "files": {
+      "Mods/New Interface Mod": "Mods/New Interface Mod"
+    },
+    "install_types": ["全部Mod"]
+  }
+]
