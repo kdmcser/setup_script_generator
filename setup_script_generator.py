@@ -9,34 +9,32 @@ from section import Section
 from config import *
 
 
-def get_install_file_and_dir_set(sections: List[Section]):
-    dirs = set()
-    files = set()
+def check_install_dirs(sections: List[Section]):
+    install_dirs = set()
+    parent_dirs = set()
     for section in sections:
         for fs in section.files:
-            if not fs.need_uninstall:
-                continue
-            for dir_name in fs.dirs:
-                dirs.add(os.path.join(fs.dest_root, dir_name))
-            for file_name in fs.files:
-                files.add(os.path.join(fs.dest_root, file_name))
-    return dirs, files
+            cur_dir = os.path.join(fs.base_dir, fs.src_root)
+            install_dirs.add(cur_dir)
+            while cur_dir != fs.base_dir:
+                cur_dir = os.path.dirname(cur_dir)
+                parent_dirs.add(cur_dir)
+    check_dir(file_dir, "", install_dirs, parent_dirs)
 
 
-def check_dir(base_root: str, relative_root: str, install_dirs: Set[str], install_files: Set[str]):
-    full_dir = os.path.join(base_root, relative_root) if relative_root != "." else base_root
-    dest_dir = "$INSTDIR" if relative_root == "." else os.path.join("$INSTDIR", relative_root)
-    if dest_dir not in install_dirs:
-        print(full_dir)
-        return
+def check_dir(base_root: str, relative_root: str, install_dirs: Set[str], parent_dirs: Set[str]):
+    full_dir = os.path.join(base_root, relative_root)
     file_names = os.listdir(full_dir)
     for file_name in file_names:
-        if os.path.isdir(file_name):
-            check_dir(base_root, os.path.join(relative_root, file_name), install_dirs, install_files)
-        else:
-            dest_file = os.path.join(dest_dir, file_name)
-            if file_name not in install_files:
-                print(os.path.join(full_dir, file_name))
+        full_file_name = os.path.join(full_dir, file_name)
+        relative_path = os.path.join(relative_root, file_name)
+        if os.path.isdir(full_file_name):
+            if full_file_name in install_dirs or full_file_name + "\\" in install_dirs:
+                continue
+            elif full_file_name in parent_dirs or full_file_name + "\\" in parent_dirs:
+                check_dir(base_root, os.path.join(relative_root, file_name), install_dirs, parent_dirs)
+            else:
+                print("Miss Element [%s]!" % full_file_name)
     pass
 
 
@@ -55,8 +53,7 @@ if __name__ == "__main__":
         "__uninstall_files__": cmd_generator.generate_uninstall_files_cmd(),
         "__uninstall_dirs__": cmd_generator.generate_uninstall_dirs_cmd()
     }
-    install_dirs, install_files = get_install_file_and_dir_set(sections)
-    check_dir(file_dir, ".", install_dirs, install_files)
+    check_install_dirs(sections)
 
     with open(template_file, "r", encoding='utf8') as fp:
         template = Template(fp.read())
