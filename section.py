@@ -1,3 +1,4 @@
+# encoding=gbk
 import os
 from typing import Dict, Set, List
 

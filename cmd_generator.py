@@ -38,7 +38,8 @@ class CmdGenerator(object):
                 cmds.append('  CreateShortCut "$SMPROGRAMS\\${PRODUCT_NAME}\\${PRODUCT_NAME}.lnk" "$INSTDIR\\VCMI_launcher.exe"')
                 cmds.append('  CreateShortCut "$DESKTOP\\${PRODUCT_NAME}.lnk" "$INSTDIR\\VCMI_launcher.exe"')
             cmds.append('SectionEnd')
-        return "\n".join(cmds) + "\n"
+            cmds.append('')
+        return "\n".join(cmds)
 
     def generate_section_desc(self):
         cmds = list()

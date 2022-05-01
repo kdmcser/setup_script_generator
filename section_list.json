@@ -29,6 +29,48 @@
     },
     "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod", "原版游戏"]
   },
+  {
+    "name": "增加双向传送门上限",
+    "desc": "可用双向传送门数量修改为100，如果不应用这个补丁，某些随机图双向门设置会出错。",
+    "files": {
+      "Mods/monolith2way": "Mods/monolith2way"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod", "原版游戏"]
+  },
+  {
+    "name": "厄运效果修复",
+    "desc": "厄运触发时只造成50%伤害。如果不开启这个补丁，幸运为负将毫无意义。",
+    "files": {
+      "Mods/unlucky": "Mods/unlucky"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod", "原版游戏"]
+  },
+
+  {
+    "name": "新扩展-神之苏醒",
+    "desc": "大名鼎鼎的WOG移植版，目前支持兵种经验、指挥官、指挥官宝物，暂不支持ERM脚本。",
+    "files": {
+      "Mods/WoG": "Mods/WoG"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新扩展-深渊号角",
+    "desc": "深渊号角（HOTA）移植版，添加港口族和一些列新宝物、新物体。",
+    "files": {
+      "Mods/hota": "Mods/hota"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新扩展-战争之潮",
+    "desc": "原始九族每座城增加一个兵种，兵种建筑和特定老兵种冲突。",
+    "files": {
+      "Mods/tidesOfWar": "Mods/tidesOfWar",
+      "Mods/hillsOfUnrest": "Mods/hillsOfUnrest"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
 
   {
     "name": "新种族-家园",
@@ -40,9 +82,381 @@
   },
   {
     "name": "新种族-梦境",
-    "desc": "刚出圣龙大神做的心灵族，UI很赞。",
+    "desc": "刚出圣龙大神做的心灵族。",
     "files": {
       "Mods/asylum": "Mods/asylum"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-堡垒",
+    "desc": "刚出圣龙大神做的矮人族，并非5代移植，而是一个全新的种族。",
+    "files": {
+      "Mods/bastille": "Mods/bastille"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-教廷",
+    "desc": "刚出圣龙大神做的基督教风格种族（好像被腐化了？）。",
+    "files": {
+      "Mods/cathedral": "Mods/cathedral"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-发条城",
+    "desc": "刚出圣龙大神做的铸造族风格种族，从堕落灾变Mod移植过来，兵种UI重做。",
+    "files": {
+      "Mods/Celestial-master": "Mods/Celestial-master"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-血堡",
+    "desc": "罗马尼亚风格种族。",
+    "files": {
+      "Mods/Cetatea": "Mods/Cetatea"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-圣诞",
+    "desc": "圣诞节风格种族，Merry Christmas（我指的是神器建筑）。",
+    "files": {
+      "Mods/christmas": "Mods/christmas"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-赛博兰",
+    "desc": "又是一个铸造风格的种族，个人感觉城镇UI比上个好（其实就是变了色），但兵种UI不如前者。",
+    "files": {
+      "Mods/Ciberium": "Mods/Ciberium"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-庄园",
+    "desc": "西欧风格种族，炼金术主题。",
+    "files": {
+      "Mods/Court": "Mods/Court"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-行宫",
+    "desc": "庄园的重做版，但和原种族差距较大，已完全是一个新种族了。这个种族城镇建造UI支持宽屏。",
+    "files": {
+      "Mods/Courtyard": "Mods/Courtyard"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-星盟",
+    "desc": "游戏《光晕》里的星盟主题的种族。",
+    "files": {
+      "Mods/Covenant": "Mods/Covenant"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-死亡谷",
+    "desc": "刚出圣龙大神做的不死种族，招魂招的是本族一级生物骸骨犬（你死了你就是狗）。",
+    "files": {
+      "Mods/Deathvalley": "Mods/Deathvalley"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-树塔",
+    "desc": "用美化版壁垒改的一版矮人族。",
+    "files": {
+      "Mods/evergreen": "Mods/evergreen"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-花仙堡",
+    "desc": "童话主题城镇，飞兵较多。（据酒馆的老板说，刚出圣龙大神打算重做这个城的UI。）",
+    "files": {
+      "Mods/Fairy": "Mods/Fairy"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-铸造厂",
+    "desc": "传说中的铸造族复原，据说这个版本才是真正的铸造族。",
+    "files": {
+      "Mods/Farriery": "Mods/Farriery"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-异星",
+    "desc": "异星铸造，个人感觉这个版本比上面那个还像真正的铸造族（因为UI漂亮）。",
+    "files": {
+      "Mods/Forge": "Mods/Forge"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-冰川",
+    "desc": "冰雪风格种族。",
+    "files": {
+      "Mods/Glacier": "Mods/Glacier"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-禁猎地",
+    "desc": "森林风格，老外在老版本禁林族上修改而成的种族。",
+    "files": {
+      "Mods/Glade": "Mods/Glade"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-丛林",
+    "desc": "魔兽暗夜精灵风格的种族。",
+    "files": {
+      "Mods/Grove": "Mods/Grove"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-峡湾",
+    "desc": "海洋风格的种族，刚出圣龙大神打算重制这个族（和双屿族合并）。",
+    "files": {
+      "Mods/haven": "Mods/haven"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-沙堡",
+    "desc": "埃及沙漠风格的种族。",
+    "files": {
+      "Mods/New Pavilion": "Mods/New Pavilion"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-金字塔",
+    "desc": "又一个埃及沙漠风格的种族。",
+    "files": {
+      "Mods/Nome": "Mods/Nome"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-禁林",
+    "desc": "刚出圣龙大神做的森林风格种族。",
+    "files": {
+      "Mods/preserve": "Mods/preserve"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-双屿",
+    "desc": "另一个海洋风格种族。",
+    "files": {
+      "Mods/Regna": "Mods/Regna"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-桃源",
+    "desc": "XEricSin大神制作的中国风种族。",
+    "files": {
+      "Mods/Retreat": "Mods/Retreat"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-遗迹",
+    "desc": "原始石器时代风格种族。",
+    "files": {
+      "Mods/ruins": "Mods/ruins"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-冰狱",
+    "desc": "刚出圣龙大神做的冰冷地狱种族。添加种族独有技能恶魔血统（加地狱和冰狱生物攻防速度）。",
+    "files": {
+      "Mods/tartarus": "Mods/tartarus"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新种族-机械",
+    "desc": "又是一个机械铸造风格种族。",
+    "files": {
+      "Mods/Technocracy": "Mods/Technocracy"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "城堡修改族-泥沼",
+    "desc": "在沼泽地上的城堡，狮鹫没了，骑士也没了，天使更不可能来沼泽的。",
+    "files": {
+      "Mods/Fen": "Mods/Fen"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-炼狱",
+    "desc": "地狱控制下的城堡，顶级兵就是恶魔。",
+    "files": {
+      "Mods/Imperium": "Mods/Imperium"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-守夜人",
+    "desc": "在暗夜中的城堡，死神掌控一切（没有囧雪）。",
+    "files": {
+      "Mods/Night Watch": "Mods/Night Watch"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-北境",
+    "desc": "在雪地上的城堡（依旧没有囧雪）。",
+    "files": {
+      "Mods/Northerners": "Mods/Northerners"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-前哨",
+    "desc": "在风暴中的城堡，血污怪的地盘。",
+    "files": {
+      "Mods/Outpost": "Mods/Outpost"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-红城",
+    "desc": "充满狂热气息的城堡，有点像5代的圣堂红军。",
+    "files": {
+      "Mods/Sand Castle": "Mods/Sand Castle"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-灰谷",
+    "desc": "灰日下的城堡，充满炎热气息，灰龙和烬龙的领地。",
+    "files": {
+      "Mods/Tenebrae": "Mods/Tenebrae"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+  {
+    "name": "城堡修改族-地底城",
+    "desc": "位于地下的城堡，当然是龙的天下。",
+    "files": {
+      "Mods/Underworld": "Mods/Underworld"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "全部Mod"]
+  },
+
+  {
+    "name": "元素城修改族-庇护所",
+    "desc": "由元素城改制的魔法种族，不过由于所有兵种完全重置，倒是可以勉强算一个新族。",
+    "files": {
+      "Mods/Shelter": "Mods/Shelter"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "新英雄-魔像合成",
+    "desc": "为塔楼增加两个魔像相关英雄，特长分别是把石人/铁人升级为金人、钻石人。",
+    "files": {
+      "Mods/Golemcraft": "Mods/Golemcraft"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新英雄-中立英雄",
+    "desc": "添加8位中立英雄和4位HOTA中立英雄，这些英雄可以在酒馆招募，但不能作为初始英雄。",
+    "files": {
+      "Mods/neutralHeroes": "Mods/neutralHeroes"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新英雄-射击的半人马",
+    "desc": "为壁垒添加一位英雄，其特长是使半人马和百般辱骂首领获得射击能力。",
+    "files": {
+      "Mods/shootingCentaurus": "Mods/shootingCentaurus"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新英雄-塔南归来",
+    "desc": "为8个种族以及港口族添加英雄无敌历代记的主角塔南。",
+    "files": {
+      "Mods/tarnum": "Mods/tarnum"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "新生物-Axolotl生物包",
+    "desc": "增加43种野外的中立生物和它们的巢穴。",
+    "files": {
+      "Mods/Axolotl Creatures Pack": "Mods/Axolotl Creatures Pack"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新生物-城堡生物扩展",
+    "desc": "增加8种野外的城堡生物和巢穴。它们无法在城堡城内招募。",
+    "files": {
+      "Mods/Castle Creatures": "Mods/Castle Creatures"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新生物-额外中立生物包",
+    "desc": "增加20种野外的城堡生物和巢穴。",
+    "files": {
+      "Mods/Extra Creature Pack": "Mods/Extra Creature Pack"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新生物-暗元素",
+    "desc": "增加6级中立生物暗元素。",
+    "files": {
+      "Mods/Dark elemental": "Mods/Dark elemental"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新生物-山丘矮人",
+    "desc": "增加2级中立生物山丘矮人。",
+    "files": {
+      "Mods/mountain dwarf": "Mods/mountain dwarf"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新生物-亡灵生物",
+    "desc": "增加25种亡灵生物和它们的巢穴。",
+    "files": {
+      "Mods/Necropolis creatures": "Mods/Necropolis creatures"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新生物-美人鱼",
+    "desc": "增加4级中立生物美人鱼。",
+    "files": {
+      "Mods/neutralCreaturesK": "Mods/neutralCreaturesK"
     },
     "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
   },
@@ -56,10 +470,126 @@
     "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
   },
   {
+  "name": "新怪物宝屋-弩车宝屋",
+  "desc": "弩车守护的宝屋，击败后获得金币和若干木石。",
+  "files": {
+    "Mods/Ballista_Bank": "Mods/Ballista_Bank"
+  },
+  "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新宝物-H2宝物",
+    "desc": "从英雄无敌2中移植的53个宝物。",
+    "files": {
+      "Mods/h2artifacts": "Mods/h2artifacts"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新宝物-H4宝物",
+    "desc": "从英雄无敌4中移植的40个指挥官宝物和440个英雄宝物。",
+    "files": {
+      "Mods/H4 arts - commander": "Mods/H4 arts - commander",
+      "Mods/H4 arts - hero": "Mods/H4 arts - hero"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新宝物-Witchking宝物包",
+    "desc": "Witchking大神制作的宝物合集，包含13个新宝物。",
+    "files": {
+      "Mods/witchking-arts": "Mods/witchking-arts"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "新魔法",
+    "desc": "添加9种新魔法。",
+    "files": {
+      "Mods/NewOldSpells+": "Mods/NewOldSpells+"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
     "name": "Andruids Mod包",
     "desc": "Andruids大神制作的Mod包合集，包含: 诅咒之国宝屋（骨龙、尸巫，大量奖励）、新技能主动性（提高军队速度）、新技能增幅术（提高魔法生物伤害）、地下城新英雄沙利文（特长增幅术）",
     "files": {
       "Mods/Andruids Expansion": "Mods/Andruids Expansion"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "迷失领域",
+    "desc": "迷失领域扩展，包含8个新宝物，19个新生物和10个新怪物宝屋。",
+    "files": {
+      "Mods/Forgotten Field": "Mods/Forgotten Field"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "彼端之国",
+    "desc": "The Other Kingdom扩展，添加4种中立生物和6位壁垒英雄。",
+    "files": {
+      "Mods/tok": "Mods/tok"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "AI强化-资源",
+    "desc": "给AI巨量起始资源，简单难度木石500，稀有资源200，金币50w，随难度递增。",
+    "files": {
+      "Mods/Resourceful AI": "Mods/Resourceful AI"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+
+  {
+    "name": "界面美化",
+    "desc": "wog界面美化mod移植，重置了大部分游戏界面，主色调为蓝色。",
+    "files": {
+      "Mods/New Interface Mod": "Mods/New Interface Mod"
+    },
+    "install_types": ["全部Mod"]
+  },
+  {
+    "name": "新城镇背景音乐",
+    "desc": "用管弦乐替换掉原始九族的城镇背景音乐。",
+    "files": {
+      "Mods/Heroes III Orchestra": "Mods/Heroes III Orchestra"
+    },
+    "install_types": ["全部Mod"]
+  },
+  {
+    "name": "新城镇背景图",
+    "desc": "重置原始九族的城镇背景图（雪地城堡、彩虹壁垒、无雪塔楼等）。",
+    "files": {
+      "Mods/lotrd_townscreens": "Mods/lotrd_townscreens"
+    },
+    "install_types": ["全部Mod"]
+  },
+  {
+    "name": "新战场背景图",
+    "desc": "Morn大神手笔，添加22张战场背景图。",
+    "files": {
+      "Mods/Morn's Battlefields Lite": "Mods/Morn's Battlefields Lite"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新载入界面图片",
+    "desc": "替换掉载入界面和重新开始游戏界面的图片。",
+    "files": {
+      "Mods/randomSkins": "Mods/randomSkins"
+    },
+    "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
+  },
+  {
+    "name": "新酒馆动画",
+    "desc": "原始9族每族酒馆拥有独特动画。",
+    "files": {
+      "Mods/TavernVideos": "Mods/TavernVideos"
     },
     "install_types": ["使用原始UI、音乐（推荐）", "不安装城堡修改种族", "全部Mod"]
   },
@@ -72,12 +602,11 @@
     },
     "install_types": ["全部Mod"]
   },
-
   {
-    "name": "界面美化",
-    "desc": "wog界面美化mod移植，重置了大部分游戏界面，主色调为蓝色。",
+    "name": "超大地图（目前不可用）",
+    "desc": "这个mod据说可以支持超大地图，但我应用打开内置超大地图时始终异常退出，希望有了解的朋友能研究修复一下。",
     "files": {
-      "Mods/New Interface Mod": "Mods/New Interface Mod"
+      "Mods/AI trace": "Mods/AI trace"
     },
     "install_types": ["全部Mod"]
   }
