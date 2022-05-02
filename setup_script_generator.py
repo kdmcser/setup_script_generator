@@ -9,16 +9,31 @@ from section import Section
 from config import *
 
 
-def check_install_dirs(sections: List[Section]):
+def get_dirs(section: Section):
     install_dirs = set()
     parent_dirs = set()
-    for section in sections:
+    if len(section.children) > 0:
+        for child in section.children:
+            child_install_dirs, child_parent_dirs = get_dirs(child)
+            install_dirs.update(child_install_dirs)
+            parent_dirs.update(child_parent_dirs)
+    else:
         for fs in section.files:
             cur_dir = os.path.join(fs.base_dir, fs.src_root)
             install_dirs.add(cur_dir)
             while cur_dir != fs.base_dir:
                 cur_dir = os.path.dirname(cur_dir)
                 parent_dirs.add(cur_dir)
+    return install_dirs, parent_dirs
+
+
+def check_install_dirs(sections: List[Section]):
+    install_dirs = set()
+    parent_dirs = set()
+    for section in sections:
+        section_install_dirs, section_parent_dirs = get_dirs(section)
+        install_dirs.update(section_install_dirs)
+        parent_dirs.update(section_parent_dirs)
     check_dir(file_dir, "", install_dirs, parent_dirs)
 
 

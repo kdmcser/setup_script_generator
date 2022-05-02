@@ -40,26 +40,40 @@ class FileStruct(object):
 
 
 class Section(object):
-    index = 0
+    section_index = 0
+    group_index = 0
 
     def __init__(self):
-        self.name = Section.get_name()
+        self.name = ""
         self.cn_name = ""
         self.desc = ""
         self.files = list()
         self.install_types = list()
+        self.children = list()
 
     @classmethod
-    def get_name(cls):
-        cls.index += 1
-        return "SEC%02d" % cls.index
+    def get_name(cls, is_group):
+        if is_group:
+            cls.group_index += 1
+            return "GRP%02d" % cls.group_index
+        else:
+            cls.section_index += 1
+            return "SEC%02d" % cls.section_index
 
     @staticmethod
     def create(json_obj: Dict[str, list], base_dir: str, install_types: List[str]):
         section = Section()
+        section.name = Section.get_name("children" in json_obj)
         section.cn_name = json_obj["name"]
         section.desc = json_obj["desc"]
-        section.load_install_types(json_obj["install_types"], install_types)
+        if "install_types" in json_obj:
+            section.load_install_types(json_obj["install_types"], install_types)
+
+        if "children" in json_obj:
+            for child in json_obj["children"]:
+                child_section = Section.create(child, base_dir, install_types)
+                section.children.append(child_section)
+            return section
 
         files = json_obj["files"]
         for src_root, value in files.items():
