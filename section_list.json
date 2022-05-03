@@ -3,7 +3,8 @@
     "name": "主程序",
     "desc": "VCMI 主程序，提供核心文件，原始9族、官方地图、战役。（必须安装）",
     "files": {
-      "main": ".",
+      "Main": ".",
+      "Map Editor": ".",
       "Data": "Data",
       "Maps": "Maps",
       "Mp3": "Mp3",
@@ -127,7 +128,7 @@
   },
   {
     "name": "新种族",
-    "desc": "27个VCMI平台新种族。",
+    "desc": "29个VCMI平台新种族。",
     "children": [
       {
         "name": "新种族-深渊",
@@ -299,7 +300,7 @@
       },
       {
         "name": "新种族-花仙堡",
-        "desc": "童话主题城镇，飞兵较多。（据酒馆的老板说，刚出圣龙大神打算重做这个城的UI。）",
+        "desc": "童话主题城镇，刚出圣龙大神已将UI重置并优化了兵种配置。",
         "files": {
           "Mods/Fairy": "Mods/Fairy"
         },
@@ -371,7 +372,7 @@
       },
       {
         "name": "新种族-峡湾",
-        "desc": "海洋风格的种族，刚出圣龙大神打算重制这个族（和双屿族合并）。",
+        "desc": "刚出圣龙大神重制的海洋风格的种族。",
         "files": {
           "Mods/haven": "Mods/haven"
         },
@@ -946,7 +947,7 @@
     "children": [
       {
         "name": "关闭AI调试日志",
-        "desc": "AI Trace Mod，原Mod是打开AI的debug日志。我怕影响性能，将它魔改成只输出info日志。所以目前建议打开。",
+        "desc": "AI Trace Mod，原Mod是打开AI的debug日志。我怕影响性能，将它魔改成只输出info日志。所以目前建议勾选这个选项。",
         "files": {
           "Mods/AI trace": "Mods/AI trace"
         },

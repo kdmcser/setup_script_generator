@@ -1,0 +1,6 @@
+CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}"
+CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\地图编辑器.lnk" "$INSTDIR\vcmieditor.exe"
+CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》地图编辑器.lnk" "$INSTDIR\h3maped.exe"
+CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》战役编辑器.lnk" "$INSTDIR\h3ccmped.exe"
+CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\VCMI_launcher.exe"
+CreateShortCut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\VCMI_launcher.exe"

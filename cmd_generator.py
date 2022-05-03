@@ -46,14 +46,20 @@ class CmdGenerator(object):
                 for file_name in files:
                     cmds.append(' ' * (tab + 2) + 'File "%s"' % os.path.join(fs.base_dir, fs.src_root, file_name))
         if section.cn_name == "主程序":
-            cmds.append(' ' * (tab + 2) + 'CreateDirectory "$SMPROGRAMS\\${PRODUCT_NAME}"')
-            cmds.append(' ' * (tab + 2) + 'CreateShortCut "$SMPROGRAMS\\${PRODUCT_NAME}\\地图编辑器.lnk" "$INSTDIR\\vcmieditor.exe"')
-            cmds.append(' ' * (tab + 2) + 'CreateShortCut "$SMPROGRAMS\\${PRODUCT_NAME}\\${PRODUCT_NAME}.lnk" "$INSTDIR\\VCMI_launcher.exe"')
-            cmds.append(' ' * (tab + 2) + 'CreateShortCut "$DESKTOP\\${PRODUCT_NAME}.lnk" "$INSTDIR\\VCMI_launcher.exe"')
+            cmds.extend(CmdGenerator.create_shortcut_cmd(tab))
         cmds.append(' ' * tab + 'SectionEnd')
         return cmds
 
-    def generate_install_cmd(self, tab=0):
+    @staticmethod
+    def create_shortcut_cmd(tab: int):
+        shortcut_cmd_file = "shortcut_template"
+        with open(shortcut_cmd_file, "r", encoding="UTF-8") as fp:
+            content = fp.read()
+            cmds = [line for line in content.split("\n") if line and line.strip()]
+            return list(map(lambda cmd: ' ' * (tab + 2) + cmd, cmds))
+        pass
+
+    def generate_install_cmd(self, tab:int=0):
         cmds = list()
         for section in self.sections:
             if len(section.children) > 0:
