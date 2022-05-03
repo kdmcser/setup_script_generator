@@ -6,7 +6,7 @@
       "main": ".",
       "Data": "Data",
       "Maps": "Maps",
-      "MP3": "MP3",
+      "Mp3": "Mp3",
       "Sprites": "Sprites",
       "Mods/GBK Chinese Fonts": "Mods/GBK Chinese Fonts",
       "config": {
@@ -752,6 +752,18 @@
     "desc": "126个VCMI平台宝物。",
     "children": [
       {
+        "name": "新宝物-神器组合",
+        "desc": "添加5种宝物，集齐它们可以组合成神器。",
+        "files": {
+          "Mods/combineGrail": "Mods/combineGrail"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
         "name": "新宝物-H2宝物",
         "desc": "从英雄无敌2中移植的53个宝物。",
         "files": {
@@ -929,16 +941,21 @@
     ]
   },
   {
-    "name": "开发人员功能（玩家勿用）",
-    "desc": "开发人员使用的mod，打开可能造成游戏的性能问题或导致游戏崩溃。",
+    "name": "开发人员功能（不建议改动）",
+    "desc": "开发人员使用的mod，修改可能造成游戏的性能问题或导致游戏崩溃。",
     "children": [
       {
-        "name": "AI调试",
-        "desc": "把AI行为输出到控制台和日志文件中，便于开发人员排查问题。",
+        "name": "关闭AI调试日志",
+        "desc": "AI Trace Mod，原Mod是打开AI的debug日志。我怕影响性能，将它魔改成只输出info日志。所以目前建议打开。",
         "files": {
           "Mods/AI trace": "Mods/AI trace"
         },
-        "install_types": []
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装",
+          "原版游戏"
+        ]
       },
       {
         "name": "超大地图（目前不可用）",
