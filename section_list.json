@@ -1,16 +1,13 @@
 [
   {
     "name": "主程序",
-    "desc": "VCMI 主程序，提供核心文件，原始9族、官方地图、战役。（必须安装）",
+    "desc": "VCMI 主程序，提供核心文件，原版游戏数据、汉化补丁以及地图编辑器。（必须安装）",
     "files": {
       "Main": ".",
       "Map Editor": ".",
-      "Data": "Data",
-      "Maps": "Maps",
-      "Mp3": "Mp3",
       "Sprites": "Sprites",
-      "Mods/GBK Chinese Fonts": "Mods/GBK Chinese Fonts",
-      "config": {
+      "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
+      "Config": {
         "dest": "$DOCUMENTS/My Games/vcmi/config",
         "overwrite": "try",
         "need_uninstall": false

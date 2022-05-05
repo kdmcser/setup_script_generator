@@ -23,6 +23,9 @@ SetCompressor lzma
 
 ; Welcome page
 !insertmacro MUI_PAGE_WELCOME
+; License page
+!insertmacro MUI_PAGE_LICENSE "txt\安装说明.txt"
+!define MUI_PAGE_CUSTOMFUNCTION_LEAVE CheckDestDir
 ; Directory page
 !insertmacro MUI_PAGE_DIRECTORY
 ; Components page
@@ -73,6 +76,17 @@ SectionEnd
 
 ; Section descriptions
 ${__section_desc__}
+
+Function CheckDestDir
+	IfFileExists "$INSTDIR\Data\*.*" 0 show_dialog
+	IfFileExists "$INSTDIR\Maps\*.*" 0 show_dialog
+	IfFileExists "$INSTDIR\Mp3\*.*" continue show_dialog
+	show_dialog:
+	    MessageBox MB_ICONEXCLAMATION|MB_YESNO "未检测到完整的《英雄无敌3死亡阴影》数据文件！${PRODUCT_NAME}运行需要依赖这些文件。您可以继续安装，安装完成后请自行将《英雄无敌3死亡阴影》的Data目录、Maps目录和Mp3目录拷贝到$INSTDIR\下。是否继续？" IDYES continue IDNO cancel
+	cancel:
+		Abort
+	continue:
+FunctionEnd
 
 Function un.onUninstSuccess
   HideWindow
