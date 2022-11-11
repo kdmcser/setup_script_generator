@@ -105,8 +105,10 @@ ${__uninstall_files__}
   Delete "$DESKTOP\${PRODUCT_NAME}.lnk"
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk"
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\地图编辑器.lnk"
-  Delete "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》地图编辑器.lnk"
-   Delete "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》战役编辑器.lnk"
+  IfFileExists "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》地图编辑器.lnk" 0 +2
+    Delete "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》地图编辑器.lnk"
+  IfFileExists "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》战役编辑器.lnk" 0 +2
+    Delete "$SMPROGRAMS\${PRODUCT_NAME}\《死亡阴影》战役编辑器.lnk"
 
 ${__uninstall_dirs__}
   RMDir "$SMPROGRAMS\${PRODUCT_NAME}"

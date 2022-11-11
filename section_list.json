@@ -22,10 +22,10 @@
     "desc": "基于原版游戏功能扩展和重大bug修复。",
     "children": [
       {
-        "name": "箭塔图标",
-        "desc": "VCMI战斗行动条（Q键调出）中的箭塔图标，建议安装，否则会是空白。",
+        "name": "VCMI额外扩展",
+        "desc": "VCMI提供的额外功能：包含分辨率扩展、箭塔图标修复、技能图标替换、随机地图模版扩展、AI初始资源加强以及快速交换部队。",
         "files": {
-          "Mods/arrowTowerIcons": "Mods/arrowTowerIcons"
+          "Mods/vcmi-extras": "Mods/vcmi-extras"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -299,7 +299,7 @@
         "name": "新种族-花仙堡",
         "desc": "童话主题城镇，刚出圣龙大神已将UI重置并优化了兵种配置。",
         "files": {
-          "Mods/Fairy": "Mods/Fairy"
+          "Mods/fairy": "Mods/fairy"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -712,6 +712,18 @@
           "不安装城堡修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "新生物-中立老鼠",
+        "desc": "增加7种中立老鼠生物。",
+        "files": {
+          "Mods/Neutral Rats Demo": "Mods/Neutral Rats Demo"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
@@ -813,6 +825,18 @@
     ]
   },
   {
+    "name": "新技能",
+    "desc": "添加新英雄技能：法术抑制，抑制对手使用高级法术。",
+    "files": {
+      "Mods/magicFader": "Mods/magicFader"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装城堡修改种族",
+      "完全安装"
+    ]
+  },
+  {
     "name": "其他扩展",
     "desc": "VCMI平台小扩展，包含怪物、技能、宝物和宝屋等。",
     "children": [
@@ -852,18 +876,6 @@
           "完全安装"
         ]
       }
-    ]
-  },
-  {
-    "name": "AI强化-资源",
-    "desc": "给AI巨量起始资源，简单难度木石500，稀有资源200，金币50w，随难度递增。",
-    "files": {
-      "Mods/Resourceful AI": "Mods/Resourceful AI"
-    },
-    "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装城堡修改种族",
-      "完全安装"
     ]
   },
   {
