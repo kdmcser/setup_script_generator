@@ -124,6 +124,19 @@
     ]
   },
   {
+    "name": "新扩展-生命与自由",
+    "desc": "添加两个新种族：树獭堡和仙桃堡，神技加强，群体魔法变为新的高级法术。",
+    "files": {
+      "Mods/LAFE Mods": "Mods/LAFE Mods",
+      "Mods/peachville": "Mods/peachville"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装城堡修改种族",
+      "完全安装"
+    ]
+  },
+  {
     "name": "新种族",
     "desc": "29个VCMI平台新种族。",
     "children": [
