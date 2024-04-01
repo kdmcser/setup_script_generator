@@ -53,7 +53,7 @@ InstallDir "$PROGRAMFILES\${PRODUCT_NAME}"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
 ShowUnInstDetails show
-BrandingText "  制作：VCMI 团队  汉化：总上所述"
+BrandingText "  制作：VCMI 团队  汉化：凤凰如梦，总上所述"
 
 ${__install_types__}
 
