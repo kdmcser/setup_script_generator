@@ -6,6 +6,7 @@
       "Main": ".",
       "Map Editor": ".",
       "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
+      "Mods/joystick-config": "Mods/joystick-config",
       "Old Mod Framework/old-chinese-mods": "Mods/old-chinese-mods",
       "Config": {
         "dest": "$DOCUMENTS/My Games/vcmi/config",
