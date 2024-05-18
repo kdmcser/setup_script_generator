@@ -126,7 +126,7 @@
   },
   {
     "name": "新种族",
-    "desc": "31个VCMI平台新种族。",
+    "desc": "33个VCMI平台新种族。",
     "children": [
       {
         "name": "新种族-深渊",
@@ -168,7 +168,7 @@
         "name": "新种族-堡垒",
         "desc": "刚出圣龙大神做的矮人族，并非5代移植，而是一个全新的种族。",
         "files": {
-          "Mods/highlands-town": "Mods/highlands-town"
+          "Mods/highlands-town-vcmi-1.4": "Mods/highlands-town-vcmi-1.4"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -499,6 +499,30 @@
           "不安装城堡修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "新种族-虫群",
+        "desc": "由虫族生物组成的阵营。",
+        "files": {
+          "Mods/swarm-town": "Mods/swarm-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-荒谷",
+        "desc": "红枫居士大佬基于种族荒原壁垒修改，昆虫主题城镇。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/wild-valley-town": "Mods/old-chinese-mods/Mods/wild-valley-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
@@ -588,6 +612,17 @@
         "desc": "位于地下的城堡，当然是龙的天下。",
         "files": {
           "Mods/old-chinese-mods/Mods/Underworld": "Mods/old-chinese-mods/Mods/Underworld"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "城堡修改族-黄金城",
+        "desc": "富得流油的种族，经过大削，10周产对决只比塔楼强一点点。",
+        "files": {
+          "Mods/eldorado-town": "Mods/eldorado-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
