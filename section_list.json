@@ -125,6 +125,18 @@
     ]
   },
   {
+    "name": "新扩展-凤凰如梦",
+    "desc": "凤凰如梦制作的彩蛋mod。",
+    "files": {
+      "Mods/phoenix-as-a-dream": "Mods/phoenix-as-a-dream"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装城堡修改种族",
+      "完全安装"
+    ]
+  },
+  {
     "name": "新种族",
     "desc": "33个VCMI平台新种族。",
     "children": [
@@ -517,6 +529,108 @@
         "desc": "红枫居士大佬基于种族荒原壁垒修改，昆虫主题城镇。",
         "files": {
           "Mods/old-chinese-mods/Mods/wild-valley-town": "Mods/old-chinese-mods/Mods/wild-valley-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "h2种族",
+    "desc": "望月鸣神天大佬移植的8个英雄无敌2种族。",
+    "children": [
+      {
+        "name": "h2种族-骑士",
+        "desc": "望月鸣神天大佬移植的英雄无敌2骑士种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/1-Knight-town": "Mods/old-chinese-mods/Mods/1-Knight-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-女巫",
+        "desc": "望月鸣神天大佬移植的英雄无敌2女巫种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/2-Sorceress-town": "Mods/old-chinese-mods/Mods/2-Sorceress-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-精灵",
+        "desc": "望月鸣神天大佬移植的英雄无敌2精灵种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/3-Wizard-town": "Mods/old-chinese-mods/Mods/3-Wizard-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-亡灵巫师",
+        "desc": "望月鸣神天大佬移植的英雄无敌2亡灵巫师种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/4-Necromancer-town": "Mods/old-chinese-mods/Mods/4-Necromancer-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-男巫",
+        "desc": "望月鸣神天大佬移植的英雄无敌2男巫种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/5-warlock-town": "Mods/old-chinese-mods/Mods/5-warlock-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-野人",
+        "desc": "望月鸣神天大佬移植的英雄无敌2野人种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/6-Barbarian-town": "Mods/old-chinese-mods/Mods/6-Barbarian-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-萨满",
+        "desc": "望月鸣神天大佬移植的英雄无敌2萨满种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/7-Witch-town": "Mods/old-chinese-mods/Mods/7-Witch-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装城堡修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "h2种族-苦修士",
+        "desc": "望月鸣神天大佬移植的英雄无敌2苦修士种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/8-Dervish-town": "Mods/old-chinese-mods/Mods/8-Dervish-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
