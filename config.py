@@ -1,4 +1,4 @@
-version = "2.1.0"
+version = "2.1.1"
 json_file = "section_list.json"
 install_type_file = "install_type_list.json"
 template_file = "nsis_template"
