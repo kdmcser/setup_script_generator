@@ -10,7 +10,7 @@
       "Old Mod Framework/old-chinese-mods": "Mods/old-chinese-mods",
       "Config": {
         "dest": "$DOCUMENTS/My Games/vcmi/config",
-        "overwrite": "try",
+        "overwrite": "on",
         "need_uninstall": false
       }
     },
