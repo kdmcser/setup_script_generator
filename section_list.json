@@ -547,6 +547,18 @@
           "不安装修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "新种族-亚特兰蒂斯",
+        "desc": "星际之门主题城镇。",
+        "files": {
+          "Mods/atlantis-town": "Mods/atlantis-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
@@ -1132,6 +1144,18 @@
     "desc": "增加3个随机地图新模版。",
     "files": {
       "Mods/warzyw-templates": "Mods/warzyw-templates"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "vcmi增强版修正",
+    "desc": "修复其他mod中不合理的设置。",
+    "files": {
+      "Mods/vcmi-enhancement-fix": "Mods/vcmi-enhancement-fix"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
