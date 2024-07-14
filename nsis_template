@@ -88,6 +88,16 @@ Function CheckDestDir
 	continue:
 FunctionEnd
 
+${__various_list__}
+
+Function .onInit
+${__various_copy__}
+FunctionEnd
+
+Function .onSelChange
+${__mutex_sections__}
+FunctionEnd
+
 Function un.onUninstSuccess
   HideWindow
   MessageBox MB_ICONINFORMATION|MB_OK "$(^Name) 已成功地从你的计算机移除。"

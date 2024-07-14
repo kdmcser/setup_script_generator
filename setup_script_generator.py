@@ -65,6 +65,9 @@ if __name__ == "__main__":
         "__install_types__": cmd_generator.generate_install_type_cmd(),
         "__section_install__": cmd_generator.generate_install_cmd(),
         "__section_desc__": cmd_generator.generate_section_desc(),
+        "__various_list__": cmd_generator.generate_various_list(),
+        "__various_copy__": cmd_generator.generate_various_copy_cmd(),
+        "__mutex_sections__": cmd_generator.generate_mutex_sections_cmd(),
         "__uninstall_files__": cmd_generator.generate_uninstall_files_cmd(),
         "__uninstall_dirs__": cmd_generator.generate_uninstall_dirs_cmd()
     }

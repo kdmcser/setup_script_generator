@@ -1,6 +1,6 @@
 # encoding=gbk
 import os
-from typing import Dict, Set, List
+from typing import Dict, List
 
 
 class FileStruct(object):
@@ -50,6 +50,7 @@ class Section(object):
         self.files = list()
         self.install_types = list()
         self.children = list()
+        self.mutex_group = None
 
     @classmethod
     def get_name(cls, is_group):
@@ -66,6 +67,8 @@ class Section(object):
         section.name = Section.get_name("children" in json_obj)
         section.cn_name = json_obj["name"]
         section.desc = json_obj["desc"]
+        section.mutex_group = json_obj.get("mutex_group", None)
+
         if "install_types" in json_obj:
             section.load_install_types(json_obj["install_types"], install_types)
 
@@ -101,7 +104,7 @@ class Section(object):
         pass
 
     @staticmethod
-    def parse_file_value(src_root: str, value:object):
+    def parse_file_value(src_root: str, value: object):
         if isinstance(value, str):
             dest_root = value
             overwrite = None

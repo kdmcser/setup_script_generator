@@ -1,4 +1,5 @@
 import os.path
+from collections import OrderedDict
 from typing import List
 
 from section import Section
@@ -8,6 +9,26 @@ class CmdGenerator(object):
     def __init__(self, sections: List[Section], install_types: List[str]):
         self.sections = sections
         self.install_types = install_types
+        self.mutex_sections = OrderedDict()
+        self.parse_mutex_sections()
+
+    def parse_mutex_sections(self):
+        for section in self.sections:
+            self.parse_mutex_section(section)
+        pass
+
+    def parse_mutex_section(self, section: Section):
+        if len(section.children) == 0:
+            if section.mutex_group is not None:
+                if section.mutex_group not in self.mutex_sections:
+                    self.mutex_sections[section.mutex_group] = list()
+                self.mutex_sections[section.mutex_group].append(section)
+        else:
+            if section.mutex_group is not None:
+                print("Not support mutex_group in section group [%s]" % section.cn_name)
+            for child in section.children:
+                self.parse_mutex_section(child)
+        pass
 
     def generate_install_type_cmd(self):
         cmds = list()
@@ -59,7 +80,7 @@ class CmdGenerator(object):
             return list(map(lambda cmd: ' ' * (tab + 2) + cmd, cmds))
         pass
 
-    def generate_install_cmd(self, tab:int=0):
+    def generate_install_cmd(self, tab: int = 0):
         cmds = list()
         for section in self.sections:
             if len(section.children) > 0:
@@ -84,6 +105,40 @@ class CmdGenerator(object):
             cmds.extend(self.do_generate_section_desc(section))
         cmds.append('!insertmacro MUI_FUNCTION_DESCRIPTION_END')
         return "\n".join(cmds) + "\n"
+
+    @staticmethod
+    def get_various_name(key: str):
+        return "%sMutexVar" % key
+
+    def generate_various_list(self):
+        cmds = list()
+        for key, value in self.mutex_sections.items():
+            if len(value) <= 1:
+                print("Mutex key [%s] only has one element!" % key)
+                continue
+            cmds.append("var " + self.get_various_name(key))
+        return "\n".join(cmds)
+
+    def generate_various_copy_cmd(self):
+        cmds = list()
+        for key, value in self.mutex_sections.items():
+            if len(value) <= 1:
+                continue
+            various_name = self.get_various_name(key)
+            first_section_name = value[0].name
+            cmds.append("  StrCpy $%s ${%s}" % (various_name, first_section_name))
+        return "\n".join(cmds)
+
+    def generate_mutex_sections_cmd(self):
+        cmds = list()
+        for key, value in self.mutex_sections.items():
+            if len(value) <= 1:
+                continue
+            cmds.append("  !insertmacro StartRadioButtons $%s" % self.get_various_name(key))
+            for section in value:
+                cmds.append("    !insertmacro RadioButton ${%s}" % section.name)
+            cmds.append("  !insertmacro EndRadioButtons")
+        return "\n".join(cmds)
 
     @staticmethod
     def do_generate_uninstall_files_cmd(section: Section):

@@ -1,9 +1,8 @@
 [
   {
-    "name": "主程序",
-    "desc": "VCMI 主程序，提供核心文件，原版游戏数据、汉化补丁以及地图编辑器。（必须安装）",
+    "name": "基础数据",
+    "desc": "VCMI基础数据，提供核心文件，配置数据、汉化补丁。（必须安装）",
     "files": {
-      "Main": ".",
       "Map Editor": ".",
       "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
       "Mods/joystick-config": "Mods/joystick-config",
@@ -17,6 +16,27 @@
     "install_types": [
       "RO"
     ]
+  },
+  {
+    "name": "主程序-Win10/11",
+    "desc": "VCMI适用于Windows10和Windows11系统的主程序。",
+    "files": {
+      "Main": "."
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ],
+    "mutex_group": "mainProgram"
+  },
+  {
+    "name": "主程序-Win7",
+    "desc": "VCMI适用于Windows7系统的主程序，该程序偶尔过天会闪退，目前暂无法解决，建议使用Windows10或更高的系统。",
+    "files": {
+      "MainWin7": "."
+    },
+    "mutex_group": "mainProgram"
   },
   {
     "name": "原版游戏修正",
@@ -1153,7 +1173,7 @@
   },
   {
     "name": "vcmi增强版修正",
-    "desc": "修复其他mod中不合理的设置。",
+    "desc": "修复vcmi增强版mod中不合理的设置。（强烈建议安装）",
     "files": {
       "Mods/vcmi-enhancement-fix": "Mods/vcmi-enhancement-fix"
     },
