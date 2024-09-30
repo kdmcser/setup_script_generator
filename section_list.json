@@ -663,6 +663,30 @@
           "不安装修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "新种族-暗夜精灵",
+        "desc": "望月鸣神天大佬设计的暗影精灵风格的种族，已平衡到接近原版h3种族强度。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/nightelf-town": "Mods/old-chinese-mods/Mods/nightelf-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-开拓团",
+        "desc": "红枫居士大佬设计的新种族。",
+        "files": {
+          "Mods/old-chinese-mods/Mods/blazers-town": "Mods/old-chinese-mods/Mods/blazers-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
