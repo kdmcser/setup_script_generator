@@ -6,6 +6,7 @@
       "Map Editor": ".",
       "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
       "Mods/joystick-config": "Mods/joystick-config",
+      "Mods/user-maps": "Mods/user-maps",
       "Old Mod Framework/old-chinese-mods": "Mods/old-chinese-mods",
       "Config": {
         "dest": "$DOCUMENTS/My Games/vcmi/config",
@@ -116,14 +117,26 @@
           "不安装修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "法术研究",
+        "desc": "支持在魔法行会里研究法术。",
+        "files": {
+          "Mods/research-spell": "Mods/research-spell"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
   {
-    "name": "非官方地图包",
-    "desc": "添加1000多张非官方地图包和100多个自创战役（这个mod会导致第一次加载游戏变慢）。",
+    "name": "紫玥炎霄中文地图包",
+    "desc": "紫玥炎霄归类整理的地图包，添加1200多张非官方地图和170多个自创战役（这个mod会导致第一次加载游戏变慢）。",
     "files": {
-      "Mods/maps-collection": "Mods/maps-collection"
+      "Mods/ziyue‘s-maps-cn": "Mods/ziyue‘s-maps-cn"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
