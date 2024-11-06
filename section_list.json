@@ -117,18 +117,6 @@
           "不安装修改种族",
           "完全安装"
         ]
-      },
-      {
-        "name": "法术研究",
-        "desc": "支持在魔法行会里研究法术。",
-        "files": {
-          "Mods/research-spell": "Mods/research-spell"
-        },
-        "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
-        ]
       }
     ]
   },
@@ -811,13 +799,13 @@
   },
   {
     "name": "新生物",
-    "desc": "99种VCMI平台专属生物。",
+    "desc": "一百多种VCMI平台专属生物。",
     "children": [
       {
-        "name": "新生物-Axolotl生物包",
-        "desc": "增加43种野外的中立生物和它们的巢穴。",
+        "name": "新生物-新生物包",
+        "desc": "多个新生物mod合集，增加数十种VCMI新生物。",
         "files": {
-          "Mods/axolotl-creatures-pack": "Mods/axolotl-creatures-pack"
+          "Mods/new-monsters-pack": "Mods/new-monsters-pack"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -838,30 +826,10 @@
         ]
       },
       {
-        "name": "新生物-额外中立生物包",
-        "desc": "增加20种野外的城堡生物和巢穴。",
+        "name": "新生物-美人鱼",
+        "desc": "Mod Design Team制作的中立生物美人鱼。",
         "files": {
-          "Mods/old-chinese-mods/Mods/Extra Creature Pack": "Mods/old-chinese-mods/Mods/Extra Creature Pack"
-        },
-        "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
-        ]
-      },
-      {
-        "name": "新生物-中立生物小Mod合集",
-        "desc": "包含9个新生物小mod，共计10种生物。",
-        "files": {
-          "Mods/old-chinese-mods/Mods/Dark elemental": "Mods/old-chinese-mods/Mods/Dark elemental",
-          "Mods/old-chinese-mods/Mods/mountain dwarf": "Mods/old-chinese-mods/Mods/mountain dwarf",
-          "Mods/old-chinese-mods/Mods/neutralCreaturesK": "Mods/old-chinese-mods/Mods/neutralCreaturesK",
-          "Mods/carpet-whisperers": "Mods/carpet-whisperers",
-          "Mods/flugel-creature": "Mods/flugel-creature",
-          "Mods/invisible-man": "Mods/invisible-man",
-          "Mods/kurek-creatures": "Mods/kurek-creatures",
-          "Mods/lost-souls": "Mods/lost-souls",
-          "Mods/undead-sphinxes": "Mods/undead-sphinxes"
+          "Mods/old-chinese-mods/Mods/neutralCreaturesK": "Mods/old-chinese-mods/Mods/neutralCreaturesK"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -1080,18 +1048,6 @@
         "desc": "迷失领域扩展，包含8个新宝物，19个新生物和10个新怪物宝屋。",
         "files": {
           "Mods/old-chinese-mods/Mods/Forgotten Field": "Mods/old-chinese-mods/Mods/Forgotten Field"
-        },
-        "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
-        ]
-      },
-      {
-        "name": "彼端之国",
-        "desc": "The Other Kingdom扩展，添加4种中立生物和6位壁垒英雄。",
-        "files": {
-          "Mods/tok": "Mods/tok"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
