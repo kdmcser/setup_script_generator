@@ -133,6 +133,18 @@
     ]
   },
   {
+    "name": "组合宝物融合增强版",
+    "desc": "组合宝物融合为一个宝物，仅占一格并保留所有组件的属性，默认关闭。",
+    "files": {
+      "Mods/fused-artifacts-plus": "Mods/fused-artifacts-plus"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
     "name": "新扩展-神之苏醒",
     "desc": "大名鼎鼎的WOG移植版，目前支持兵种经验、指挥官、指挥官宝物，暂不支持ERM脚本。",
     "files": {
@@ -211,7 +223,7 @@
       },
       {
         "name": "新种族-梦境",
-        "desc": "刚出圣龙大神做的心灵族。",
+        "desc": "刚出圣龙大佬做的心灵族。",
         "files": {
           "Mods/asylum-town": "Mods/asylum-town"
         },
@@ -223,7 +235,7 @@
       },
       {
         "name": "新种族-堡垒",
-        "desc": "刚出圣龙大神做的矮人族，并非5代移植，而是一个全新的种族。",
+        "desc": "刚出圣龙大佬做的矮人族，并非5代移植，而是一个全新的种族。",
         "files": {
           "Mods/highlands-town": "Mods/highlands-town"
         },
@@ -235,7 +247,7 @@
       },
       {
         "name": "新种族-教廷",
-        "desc": "刚出圣龙大神做的基督教风格种族（好像被腐化了？）。",
+        "desc": "刚出圣龙大佬做的基督教风格种族（好像被腐化了？）。",
         "files": {
           "Mods/cathedral-town": "Mods/cathedral-town"
         },
@@ -247,7 +259,7 @@
       },
       {
         "name": "新种族-发条城",
-        "desc": "刚出圣龙大神做的铸造族风格种族，从堕落灾变Mod移植过来，兵种UI重做。",
+        "desc": "刚出圣龙大佬做的铸造族风格种族，从堕落灾变Mod移植过来，兵种UI重做。",
         "files": {
           "Mods/old-chinese-mods/Mods/Celestial-master": "Mods/old-chinese-mods/Mods/Celestial-master"
         },
@@ -331,7 +343,7 @@
       },
       {
         "name": "新种族-死亡谷",
-        "desc": "刚出圣龙大神做的不死种族，招魂招的是本族一级生物骸骨犬（你死了你就是狗）。",
+        "desc": "刚出圣龙大佬做的不死种族，招魂招的是本族一级生物骸骨犬（你死了你就是狗）。",
         "files": {
           "Mods/death-valley-town": "Mods/death-valley-town"
         },
@@ -355,7 +367,7 @@
       },
       {
         "name": "新种族-花仙堡",
-        "desc": "童话主题城镇，刚出圣龙大神已将UI重置并优化了兵种配置。",
+        "desc": "童话主题城镇，刚出圣龙大佬已将UI重置并优化了兵种配置。",
         "files": {
           "Mods/fairy-town": "Mods/fairy-town"
         },
@@ -463,7 +475,7 @@
       },
       {
         "name": "新种族-禁林",
-        "desc": "刚出圣龙大神做的森林风格种族。",
+        "desc": "刚出圣龙大佬做的森林风格种族。",
         "files": {
           "Mods/preserve-town": "Mods/preserve-town"
         },
@@ -475,7 +487,7 @@
       },
       {
         "name": "新种族-双屿",
-        "desc": "刚出圣龙大神重制的一个海洋风格种族。",
+        "desc": "刚出圣龙大佬重制的一个海洋风格种族。",
         "files": {
           "Mods/old-chinese-mods/Mods/Regna": "Mods/old-chinese-mods/Mods/Regna"
         },
@@ -487,7 +499,7 @@
       },
       {
         "name": "新种族-桃源",
-        "desc": "XEricSin大神制作的中国风种族。",
+        "desc": "XEricSin大佬制作的中国风种族。",
         "files": {
           "Mods/retreat-town": "Mods/retreat-town"
         },
@@ -511,7 +523,7 @@
       },
       {
         "name": "新种族-冰狱",
-        "desc": "刚出圣龙大神做的冰冷地狱种族。添加种族独有技能恶魔血统（加地狱和冰狱生物攻防速度）。",
+        "desc": "刚出圣龙大佬做的冰冷地狱种族。添加种族独有技能恶魔血统（加地狱和冰狱生物攻防速度）。",
         "files": {
           "Mods/tartarus-town": "Mods/tartarus-town"
         },
@@ -655,7 +667,7 @@
       },
       {
         "name": "新种族-克里姆林",
-        "desc": "俄罗斯大佬设计的俄罗斯神话风格的种族。",
+        "desc": "Olegmods大佬设计的俄罗斯神话风格的种族。",
         "files": {
           "Mods/kremlin-town": "Mods/kremlin-town"
         },
@@ -682,6 +694,30 @@
         "desc": "红枫居士大佬设计的新种族。",
         "files": {
           "Mods/old-chinese-mods/Mods/blazers-town": "Mods/old-chinese-mods/Mods/blazers-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-力量",
+        "desc": "AcidChalk大佬从英雄无敌4里移植过来的种族，一共八个生物，没有升级并且不需要二选一。",
+        "files": {
+          "Mods/might-town": "Mods/might-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-土之位面",
+        "desc": "AcidChalk大佬基于地下城早期设计制作的种族。",
+        "files": {
+          "Mods/plane-of-earth-town": "Mods/plane-of-earth-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -960,7 +996,7 @@
       },
       {
         "name": "新宝物-Witchking宝物包",
-        "desc": "Witchking大神制作的宝物合集，包含13个新宝物。",
+        "desc": "Witchking大佬制作的宝物合集，包含13个新宝物。",
         "files": {
           "Mods/old-chinese-mods/Mods/witchking-arts": "Mods/old-chinese-mods/Mods/witchking-arts"
         },
@@ -1033,7 +1069,7 @@
     "children": [
       {
         "name": "Andruids Mod包",
-        "desc": "Andruids大神制作的Mod包合集，包含: 诅咒之国宝屋（骨龙、尸巫，大量奖励）、新技能主动性（提高军队速度）、新技能增幅术（提高魔法生物伤害）、地下城新英雄沙利文（特长增幅术）",
+        "desc": "Andruids大佬制作的Mod包合集，包含: 诅咒之国宝屋（骨龙、尸巫，大量奖励）、新技能主动性（提高军队速度）、新技能增幅术（提高魔法生物伤害）、地下城新英雄沙利文（特长增幅术）",
         "files": {
           "Mods/andruids-expansion": "Mods/andruids-expansion"
         },
@@ -1099,7 +1135,7 @@
     "children": [
       {
         "name": "新战场背景图",
-        "desc": "Morn大神手笔，添加69张战场背景图。",
+        "desc": "Morn大佬手笔，添加69张战场背景图。",
         "files": {
           "Mods/morns-battlefields": "Mods/morns-battlefields"
         },
