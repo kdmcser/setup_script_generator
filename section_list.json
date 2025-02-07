@@ -793,7 +793,7 @@
   },
   {
     "name": "新英雄",
-    "desc": "13位VCMI平台新英雄。",
+    "desc": "14位VCMI平台新英雄。",
     "children": [
       {
         "name": "新英雄-魔像合成",
@@ -824,6 +824,18 @@
         "desc": "为壁垒添加一位英雄，其特长是使半人马和百般辱骂首领获得射击能力。",
         "files": {
           "Mods/old-chinese-mods/Mods/shootingCentaurus": "Mods/old-chinese-mods/Mods/shootingCentaurus"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新英雄-生物英雄",
+        "desc": "添加一位VCMI新英雄。",
+        "files": {
+          "Mods/creature-heroes": "Mods/creature-heroes"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -1098,6 +1110,30 @@
     "desc": "对AI进行多方面的修改：提高AI的资源，战斗奖励和冒险地图奖励。同时对AI使用英雄数量进行限制，优化过天时间。",
     "files": {
       "Mods/boost-ai": "Mods/boost-ai"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "魔改AI",
+    "desc": "冷火猫大佬进一步提高AI难度，提供多种难度可供选择，并进一步优化了AI行为。（和AI增强冲突，默认关闭）",
+    "files": {
+      "Mods/overall-ai-bonus": "Mods/overall-ai-bonus"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "ash随机地图模版",
+    "desc": "ash大佬开发的2个随机地图新模版。",
+    "files": {
+      "Mods/ash-templates": "Mods/ash-templates"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
