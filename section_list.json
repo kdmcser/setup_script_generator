@@ -678,8 +678,8 @@
         ]
       },
       {
-        "name": "新种族-暗夜精灵",
-        "desc": "望月鸣神天大佬设计的暗影精灵风格的种族，已平衡到接近原版h3种族强度。",
+        "name": "新种族望月",
+        "desc": "望月鸣神天大佬设计的暗夜精灵风格的种族，已平衡到接近原版h3种族强度。",
         "files": {
           "Mods/old-chinese-mods/Mods/nightelf-town": "Mods/old-chinese-mods/Mods/nightelf-town"
         },
@@ -718,6 +718,18 @@
         "desc": "AcidChalk大佬基于地下城早期设计制作的种族。",
         "files": {
           "Mods/plane-of-earth-town": "Mods/plane-of-earth-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-暗夜精灵",
+        "desc": "吓死蛮牛大佬和白云飘飘大佬制作的魔兽暗夜精灵风格种族。",
+        "files": {
+          "Mods/night-elves-town": "Mods/night-elves-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
