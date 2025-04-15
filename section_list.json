@@ -6,10 +6,9 @@
       "Map Editor": ".",
       "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
       "Mods/joystick-config": "Mods/joystick-config",
-      "Mods/user-maps": "Mods/user-maps",
       "Old Mod Framework/old-chinese-mods": "Mods/old-chinese-mods",
       "Config": {
-        "dest": "$DOCUMENTS/My Games/vcmi/config",
+        "dest": "$DOCUMENTS/My Games/vcmi_enhancement/config",
         "overwrite": "on",
         "need_uninstall": false
       }
@@ -124,7 +123,7 @@
     "name": "紫玥炎霄中文地图包",
     "desc": "紫玥炎霄归类整理的地图包，添加1200多张非官方地图和170多个自创战役（这个mod会导致第一次加载游戏变慢）。",
     "files": {
-      "Mods/ziyue‘s-maps-cn": "Mods/ziyue‘s-maps-cn"
+      "Mods/ziyue's-maps-cn": "Mods/ziyue's-maps-cn"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
@@ -137,6 +136,30 @@
     "desc": "组合宝物融合为一个宝物，仅占一格并保留所有组件的属性，默认关闭。",
     "files": {
       "Mods/fused-artifacts-plus": "Mods/fused-artifacts-plus"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "伤害公式扩展",
+    "desc": "修改原版的伤害公式，突破攻击力防御力影响的伤害上下限。",
+    "files": {
+      "Mods/more-damage-formulas": "Mods/more-damage-formulas"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "士气运气扩展",
+    "desc": "修改士气运气机制，扩展到上限20，下限10。",
+    "files": {
+      "Mods/morale-luck-extension": "Mods/morale-luck-extension"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
@@ -186,6 +209,18 @@
     "desc": "凤凰如梦制作的彩蛋mod。",
     "files": {
       "Mods/phoenix-as-a-dream": "Mods/phoenix-as-a-dream"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "新扩展-三阶升级",
+    "desc": "为原版九族生物提供三阶升级，无法在城内建造，但可以通过特殊英雄Archer进行。",
+    "files": {
+      "Mods/third-upgrades-archer": "Mods/third-upgrades-archer"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
@@ -925,49 +960,37 @@
   },
   {
     "name": "新地图物体",
-    "desc": "2种VCMI平台新怪物宝屋。",
+    "desc": "包含新宝屋、新地图建筑、新道路等。",
     "children": [
       {
-        "name": "新地图物体-亚巴顿之柱",
-        "desc": "尸巫王、玛格和怪物守护的宝屋，击败后获得8000金币和若干资源，宝物、魔法奖励。",
-        "files": {
-          "Mods/old-chinese-mods/Mods/abaddonColumn": "Mods/old-chinese-mods/Mods/abaddonColumn"
-        },
-        "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
-        ]
-      },
-      {
-        "name": "新地图物体-弩车宝屋",
-        "desc": "弩车守护的宝屋，击败后获得金币和若干木石。",
-        "files": {
-          "Mods/old-chinese-mods/Mods/Ballista_Bank": "Mods/old-chinese-mods/Mods/Ballista_Bank"
-        },
-        "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
-        ]
-      },
-      {
-        "name": "新地图物体-元素节点",
-        "desc": "能永久增加英雄某一系魔法伤害的野外建筑。",
-        "files": {
-          "Mods/elemental-nodes": "Mods/elemental-nodes"
-        },
-        "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
-        ]
-      },
-      {
-        "name": "新地图物体-中央仓库",
-        "desc": "每周提供大量资源的中央仓库。",
+        "name": "新地图物体-新物体包",
+        "desc": "一系列地图物体，包括亚巴顿之柱、弩车宝屋、中央仓库、元素节点、魔像工厂修改和现代化道路。",
         "files": {
           "Mods/object-pack": "Mods/object-pack"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新地图物体-时间市场",
+        "desc": "遗忘特定技能的建筑，和Wog时间市场的不一样。",
+        "files": {
+          "Mods/market-of-time": "Mods/market-of-time"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新地图物体-光之国",
+        "desc": "Luckiplus大佬设计的奥特曼主题宝屋。",
+        "files": {
+          "Mods/land-of-light": "Mods/land-of-light"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -1033,10 +1056,22 @@
     ]
   },
   {
-    "name": "新魔法",
+    "name": "新魔法——9个新法术",
     "desc": "添加9种新魔法。",
     "files": {
       "Mods/new-old-spells-plus": "Mods/new-old-spells-plus"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "新魔法——红枫居士魔法包",
+    "desc": "添加红枫居士设计的新魔法和一个新宝物。",
+    "files": {
+      "Mods/old-chinese-mods/Mods/optional-Spells-Artifacts": "Mods/old-chinese-mods/Mods/optional-Spells-Artifacts"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
@@ -1170,6 +1205,18 @@
     "desc": "修复vcmi增强版mod中不合理的设置。（强烈建议安装）",
     "files": {
       "Mods/vcmi-enhancement-fix": "Mods/vcmi-enhancement-fix"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
+    "name": "vcmi增强版平衡",
+    "desc": "对vcmi增强版中部分mod进行平衡。（强烈建议安装）",
+    "files": {
+      "Mods/vcmi-enhancement-balance": "Mods/vcmi-enhancement-balance"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
