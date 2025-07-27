@@ -82,6 +82,19 @@
         ]
       },
       {
+        "name": "辅助技能扩展",
+        "desc": "支持英雄学习超过8个辅助技能。",
+        "files": {
+          "Mods/more-secondary": "Mods/more-secondary"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装",
+          "原版游戏"
+        ]
+      },
+      {
         "name": "战役英雄",
         "desc": "允许使用战役特殊英雄（格鲁、德肯、凯瑟琳、埃德妮等）。",
         "files": {
@@ -620,7 +633,7 @@
         "name": "新种族-荒谷",
         "desc": "红枫居士大佬基于种族荒原壁垒修改，昆虫主题城镇。",
         "files": {
-          "Mods/old-chinese-mods/Mods/wild-valley-town": "Mods/old-chinese-mods/Mods/wild-valley-town"
+          "Mods/new-chinese-mods/Mods/wild-valley-town": "Mods/new-chinese-mods/Mods/wild-valley-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -656,7 +669,7 @@
         "name": "新种族-驳船",
         "desc": "望月鸣神天大佬设计的新种族驳船，使用新地形冰原，已平衡到接近原版h3种族强度。",
         "files": {
-          "Mods/old-chinese-mods/Mods/stalkerbarge-town": "Mods/old-chinese-mods/Mods/stalkerbarge-town"
+          "Mods/new-chinese-mods/Mods/stalkerbarge-town": "Mods/new-chinese-mods/Mods/stalkerbarge-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -668,7 +681,7 @@
         "name": "新种族-潜影者",
         "desc": "望月鸣神天大佬设计的类地狱种族潜影者，已平衡到接近原版h3种族强度。",
         "files": {
-          "Mods/old-chinese-mods/Mods/stlk-undertaker-town": "Mods/old-chinese-mods/Mods/stlk-undertaker-town"
+          "Mods/new-chinese-mods/Mods/stlk-undertaker-town": "Mods/new-chinese-mods/Mods/stlk-undertaker-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -680,7 +693,7 @@
         "name": "新种族-生命壁垒",
         "desc": "望月鸣神天大佬设计的自然主题的种族生命壁垒，已平衡到接近原版h3种族强度。",
         "files": {
-          "Mods/old-chinese-mods/Mods/stlk-rookiecamp-town": "Mods/old-chinese-mods/Mods/stlk-rookiecamp-town"
+          "Mods/new-chinese-mods/Mods/stlk-rookiecamp-town": "Mods/new-chinese-mods/Mods/stlk-rookiecamp-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -692,7 +705,7 @@
         "name": "新种族-龙之国度",
         "desc": "望月鸣神天大佬设计的所有兵种均为龙的种族龙之国度，已平衡到接近原版h3种族强度。",
         "files": {
-          "Mods/old-chinese-mods/Mods/dragonutopiaks-town": "Mods/old-chinese-mods/Mods/dragonutopiaks-town"
+          "Mods/new-chinese-mods/Mods/dragonutopiaks-town": "Mods/new-chinese-mods/Mods/dragonutopiaks-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -716,7 +729,7 @@
         "name": "新种族望月",
         "desc": "望月鸣神天大佬设计的暗夜精灵风格的种族，已平衡到接近原版h3种族强度。",
         "files": {
-          "Mods/old-chinese-mods/Mods/nightelf-town": "Mods/old-chinese-mods/Mods/nightelf-town"
+          "Mods/new-chinese-mods/Mods/nightelf-town": "Mods/new-chinese-mods/Mods/nightelf-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -728,7 +741,7 @@
         "name": "新种族-开拓团",
         "desc": "红枫居士大佬设计的新种族。",
         "files": {
-          "Mods/old-chinese-mods/Mods/blazers-town": "Mods/old-chinese-mods/Mods/blazers-town"
+          "Mods/new-chinese-mods/Mods/blazers-town": "Mods/new-chinese-mods/Mods/blazers-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -761,10 +774,10 @@
         ]
       },
       {
-        "name": "新种族-暗夜精灵",
-        "desc": "吓死蛮牛大佬和白云飘飘大佬制作的魔兽暗夜精灵风格种族。",
+        "name": "新种族-方舟",
+        "desc": "极北民族风格的种族。",
         "files": {
-          "Mods/night-elves-town": "Mods/night-elves-town"
+          "Mods/ark-town": "Mods/ark-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -773,10 +786,34 @@
         ]
       },
       {
-        "name": "新种族-方舟",
-        "desc": "极北民族风格的种族。",
+        "name": "新种族-娜迦",
+        "desc": "Lucki大佬制作的魔兽争霸娜迦主题种族。",
         "files": {
-          "Mods/ark-town": "Mods/ark-town"
+          "Mods/naga-town": "Mods/naga-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-暗夜",
+        "desc": "东方秘境团队制作的暗夜精灵风格种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/moonspire": "Mods/new-chinese-mods/Mods/moonspire"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-炎黄",
+        "desc": "东方秘境团队制作的中国风种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/yanHuang": "Mods/new-chinese-mods/Mods/yanHuang"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -790,7 +827,7 @@
     "name": "h2种族",
     "desc": "望月鸣神天大佬移植的8个英雄无敌2种族：骑士、女巫、精灵、亡灵巫师、男巫、野人、萨满、苦修士。",
     "files": {
-      "Mods/old-chinese-mods/Mods/h2-towns": "Mods/old-chinese-mods/Mods/h2-towns"
+      "Mods/new-chinese-mods/Mods/h2-towns": "Mods/new-chinese-mods/Mods/h2-towns"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
@@ -990,7 +1027,7 @@
         "name": "新地图物体-时间市场",
         "desc": "遗忘特定技能的建筑，和Wog时间市场的不一样。",
         "files": {
-          "Mods/market-of-time": "Mods/market-of-time"
+          "Mods/marketOfTime": "Mods/marketOfTimee"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -1083,7 +1120,7 @@
     "name": "新魔法——红枫居士魔法包",
     "desc": "添加红枫居士设计的新魔法和一个新宝物。",
     "files": {
-      "Mods/old-chinese-mods/Mods/optional-Spells-Artifacts": "Mods/old-chinese-mods/Mods/optional-Spells-Artifacts"
+      "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts": "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
