@@ -1027,7 +1027,7 @@
         "name": "新地图物体-时间市场",
         "desc": "遗忘特定技能的建筑，和Wog时间市场的不一样。",
         "files": {
-          "Mods/marketOfTime": "Mods/marketOfTimee"
+          "Mods/marketOfTime": "Mods/marketOfTime"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
