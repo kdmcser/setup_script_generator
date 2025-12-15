@@ -1,8 +1,9 @@
 [
   {
-    "name": "基础数据",
-    "desc": "VCMI基础数据，提供核心文件，配置数据、汉化补丁。（必须安装）",
+    "name": "主程序和基础数据",
+    "desc": "VCMI主程序和基础数据，提供核心文件，配置数据、汉化补丁。（仅支持Win10/11，必须安装）",
     "files": {
+      "Main": ".",
       "Map Editor": ".",
       "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
       "Mods/joystick-config": "Mods/joystick-config",
@@ -16,27 +17,6 @@
     "install_types": [
       "RO"
     ]
-  },
-  {
-    "name": "主程序-Win10/11",
-    "desc": "VCMI适用于Windows10和Windows11系统的主程序。",
-    "files": {
-      "Main": "."
-    },
-    "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
-    ],
-    "mutex_group": "mainProgram"
-  },
-  {
-    "name": "主程序-Win7",
-    "desc": "VCMI适用于Windows7系统的主程序，该程序偶尔过天会闪退，目前暂无法解决，建议使用Windows10或更高的系统。",
-    "files": {
-      "MainWin7": "."
-    },
-    "mutex_group": "mainProgram"
   },
   {
     "name": "原版游戏修正",
@@ -786,6 +766,18 @@
         ]
       },
       {
+        "name": "新种族-炼金",
+        "desc": "辉太郎大佬制作的炼金术主题种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/lianjin-town": "Mods/new-chinese-mods/Mods/lianjin-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
         "name": "新种族-娜迦",
         "desc": "Lucki大佬制作的魔兽争霸娜迦主题种族。",
         "files": {
@@ -810,7 +802,7 @@
         ]
       },
       {
-        "name": "新种族-炎黄",
+        "name": "新种族-炎煌",
         "desc": "东方秘境团队制作的中国风种族。",
         "files": {
           "Mods/new-chinese-mods/Mods/yanHuang": "Mods/new-chinese-mods/Mods/yanHuang"
