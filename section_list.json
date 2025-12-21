@@ -7,7 +7,8 @@
       "Map Editor": ".",
       "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
       "Mods/joystick-config": "Mods/joystick-config",
-      "Old Mod Framework/old-chinese-mods": "Mods/old-chinese-mods",
+      "Mod Frameworks/old-chinese-mods": "Mods/old-chinese-mods",
+      "Mod Frameworks/new-chinese-mods": "Mods/new-chinese-mods",
       "Config": {
         "dest": "$DOCUMENTS/My Games/vcmi_enhancement/config",
         "overwrite": "on",
