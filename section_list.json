@@ -5,10 +5,10 @@
     "files": {
       "Main": ".",
       "Map Editor": ".",
-      "Mods/-- Simplified Chinese Translation --": "Mods/-- Simplified Chinese Translation --",
-      "Mods/joystick-config": "Mods/joystick-config",
+      "Mods/simplified-chinese-translation": "Mods/simplified-chinese-translation",
       "Mod Frameworks/old-chinese-mods": "Mods/old-chinese-mods",
       "Mod Frameworks/new-chinese-mods": "Mods/new-chinese-mods",
+      "Mods/mmai": "Mods/mmai",
       "Config": {
         "dest": "$DOCUMENTS/My Games/vcmi_enhancement/config",
         "overwrite": "on",
@@ -224,7 +224,7 @@
   },
   {
     "name": "新种族",
-    "desc": "42个VCMI平台新种族。",
+    "desc": "数十个VCMI平台新种族。",
     "children": [
       {
         "name": "新种族-深渊",
@@ -770,7 +770,19 @@
         "name": "新种族-炼金",
         "desc": "辉太郎大佬制作的炼金术主题种族。",
         "files": {
-          "Mods/new-chinese-mods/Mods/lianjin-town": "Mods/new-chinese-mods/Mods/lianjin-town"
+          "Mods/new-chinese-mods/Mods/alchemy-town": "Mods/new-chinese-mods/Mods/alchemy-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-电机城",
+        "desc": "鬼剑士大佬制作的机械主题种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/electrical-machinery-town": "Mods/new-chinese-mods/Mods/electrical-machinery-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -807,6 +819,42 @@
         "desc": "东方秘境团队制作的中国风种族。",
         "files": {
           "Mods/new-chinese-mods/Mods/yanHuang": "Mods/new-chinese-mods/Mods/yanHuang"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-妖域",
+        "desc": "东方秘境团队制作的中国风种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/feydom": "Mods/new-chinese-mods/Mods/feydom"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-蜀汉",
+        "desc": "东方秘境团队制作的中国风种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/shuHan": "Mods/new-chinese-mods/Mods/shuHan"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-混沌",
+        "desc": "一个克苏鲁主题种族。",
+        "files": {
+          "Mods/nevermore-town": "Mods/nevermore-town"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -1044,7 +1092,7 @@
   },
   {
     "name": "新宝物",
-    "desc": "126个VCMI平台宝物。",
+    "desc": "百余个VCMI平台宝物。",
     "children": [
       {
         "name": "新宝物-神器组合",
@@ -1094,38 +1142,80 @@
           "不安装修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "新宝物-月之秘宝",
+        "desc": "添加5个月系新宝物。",
+        "files": {
+          "Mods/moon-artifacts": "Mods/moon-artifacts"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
   {
-    "name": "新魔法——9个新法术",
-    "desc": "添加9种新魔法。",
-    "files": {
-      "Mods/new-old-spells-plus": "Mods/new-old-spells-plus"
-    },
-    "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
-    ]
-  },
-  {
-    "name": "新魔法——红枫居士魔法包",
-    "desc": "添加红枫居士设计的新魔法和一个新宝物。",
-    "files": {
-      "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts": "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts"
-    },
-    "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+    "name": "新魔法",
+    "desc": "数十个VCMI平台魔法。",
+    "children": [
+      {
+        "name": "新魔法——9个新法术",
+        "desc": "添加9种新魔法。",
+        "files": {
+          "Mods/new-old-spells-plus": "Mods/new-old-spells-plus"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新魔法——红枫居士魔法包",
+        "desc": "添加红枫居士设计的新魔法和一个新宝物。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts": "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新魔法——冒险地图魔法",
+        "desc": "添加24个冒险地图法术。",
+        "files": {
+          "Mods/adventure-spells-pack": "Mods/adventure-spells-pack"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新魔法——新召唤魔法",
+        "desc": "添加7个新召唤魔法。",
+        "files": {
+          "Mods/new-summon-spells": "Mods/new-summon-spells"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      }
     ]
   },
   {
     "name": "新技能",
-    "desc": "添加新英雄技能：法术抑制，抑制对手使用高级法术。",
+    "desc": "添加5个新技能：解剖学、狂暴术、冲击术、法术抑制和敏捷术。",
     "files": {
-      "Mods/magic-fader": "Mods/magic-fader"
+      "Mods/new-skills-pack": "Mods/new-skills-pack"
     },
     "install_types": [
       "使用原始UI、音乐（推荐）",
@@ -1270,6 +1360,18 @@
     "name": "图形、音乐修改",
     "desc": "对游戏图形，音乐进行美化",
     "children": [
+      {
+        "name": "新主菜单音乐",
+        "desc": "添加vcmi增强版主菜单音乐和WoG主菜单音乐可供替换",
+        "files": {
+          "Mods/h3e-main-menu-music": "Mods/h3e-main-menu-music"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
       {
         "name": "新战场背景图",
         "desc": "Morn大佬手笔，添加69张战场背景图。",
