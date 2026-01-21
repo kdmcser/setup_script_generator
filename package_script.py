@@ -1,8 +1,50 @@
 import os
-import zipfile
-import shutil
+import shlex
 import time
 import subprocess
+import base64
+import binascii
+
+
+def get_encryption_password():
+    """获取加密密码，通过环境变量计算"""
+    # 获取环境变量
+    mod_password = os.environ.get('MOD_PASSWORD')
+    mod_password_mask = os.environ.get('MOD_PASSWORD_MASK')
+
+    if not mod_password or not mod_password_mask:
+        print("错误: 缺少必要的环境变量 MOD_PASSWORD 或 MOD_PASSWORD_MASK")
+        return None
+
+    try:
+        # 1. 对MOD_PASSWORD进行base64解码
+        decoded_password = base64.b64decode(mod_password)
+        password_binary = decoded_password
+
+        # 2. 对MOD_PASSWORD_MASK进行十六进制解码
+        # 先移除可能的0x前缀和空格
+        mask_hex = mod_password_mask.strip()
+        if mask_hex.startswith('0x'):
+            mask_hex = mask_hex[2:]
+        mask_hex = mask_hex.replace(' ', '')
+
+        # 十六进制字符串转二进制
+        mask_binary = binascii.unhexlify(mask_hex)
+
+        # 使用循环mask进行异或运算
+        # 当mask长度不足时，自动循环使用
+        xor_result = bytes([password_binary[i] ^ mask_binary[i % len(mask_binary)]
+                            for i in range(len(password_binary))])
+
+        # 5. 将结果转换为字符串（假设结果为UTF-8编码）
+        final_password = xor_result.decode('utf-8')
+
+        return final_password
+
+    except Exception as e:
+        print(f"错误: 计算加密密码时发生错误")
+        print(f"详细错误: {e}")
+        return None
 
 
 def validate_directory(directory_path):
@@ -26,54 +68,67 @@ def validate_file_access(file_path):
     return True
 
 
-def create_content_zip(content_path, zip_path):
-    """创建content目录的zip文件"""
-    # 检查目标zip文件是否已存在
-    if os.path.exists(zip_path):
-        print(f"错误: zip文件已存在: {zip_path}")
+
+
+
+def create_content_zip(content_path, zip_path, password=None):
+    """
+    使用固定路径的 7-Zip 创建 zip：
+    - content_path 这一层不进入 zip
+    - 仅存储（-mx=0）
+    - 有 password 时使用 ZipCrypto
+    - 使用固定路径: C:\\Program Files\\7-Zip\\7z.exe
+    """
+
+    seven_zip_path = r"C:\Program Files\7-Zip\7z.exe"
+
+    if not os.path.isfile(seven_zip_path):
+        print(f"未找到 7-Zip: {seven_zip_path}")
         return False
 
-    # 验证content目录是否可访问
-    if not os.access(content_path, os.R_OK):
-        print(f"错误: 目录不可读: {content_path}")
+    content_path = os.path.abspath(content_path)
+    zip_path = os.path.abspath(zip_path)
+
+    # 防止把输出 zip 打包进去
+    if os.path.commonpath([zip_path, content_path]) == content_path:
+        print("zip_path 不能位于 content_path 目录内部，否则会被递归打包")
         return False
 
-    try:
-        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_STORED) as zip_file:
-            for folder_name, sub_folders, file_names in os.walk(content_path):
-                for file_name in file_names:
-                    file_path = os.path.join(folder_name, file_name)
+    cmd = [
+        seven_zip_path,
+        "a",            # add
+        "-tzip",        # zip 格式
+        "-mx=0",        # 仅存储
+        "-y",           # 自动 yes
+    ]
 
-                    # 验证文件是否可读
-                    if not validate_file_access(file_path):
-                        return False
+    if  password:
+        cmd.append(f"-p{password}")
+        cmd.append("-mem=ZipCrypto")   # 强制传统 ZipCrypto
+        cmd.append("-mcu=on")
 
-                    # 计算在zip中的路径（去掉content目录本身）
-                    arc_name = os.path.relpath(file_path, content_path)
+    cmd.append(zip_path)
+    cmd.append(".")
 
-                    try:
-                        zip_file.write(file_path, arc_name)
-                    except Exception as e:
-                        print(f"错误: 无法将文件添加到zip: {file_path}")
-                        print(f"详细错误: {e}")
-                        return False
+    print(" ".join(cmd))
 
-        # 验证zip文件是否成功创建且不为空
-        if not os.path.exists(zip_path):
-            print(f"错误: zip文件创建失败: {zip_path}")
-            return False
+    result = subprocess.run(
+        cmd,
+        cwd=content_path,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
 
-        if os.path.getsize(zip_path) == 0:
-            print(f"错误: 创建的zip文件为空: {zip_path}")
-            return False
-
-        return True
-
-    except Exception as e:
-        print(f"错误: 创建zip文件失败: {zip_path}")
-        print(f"详细错误: {e}")
+    if result.returncode != 0:
+        print(
+            "7-Zip 打包失败:\n"
+            f"cmd: {' '.join(shlex.quote(c) for c in cmd)}\n"
+            f"stdout:\n{result.stdout}\n"
+            f"stderr:\n{result.stderr}"
+        )
         return False
-
+    return True
 
 def delete_with_force(path):
     """使用Windows命令行强制删除"""
@@ -91,6 +146,7 @@ def delete_with_force(path):
             os.rmdir(path)
     else:
         print(f"路径不存在: {path}")
+
 
 def delete_directory_with_retry(directory_path, max_retries=3):
     """带重试机制的目录删除"""
@@ -114,19 +170,24 @@ def delete_directory_with_retry(directory_path, max_retries=3):
     return False
 
 
-def process_content_directory(content_path):
+def process_content_directory(content_path, use_encryption=False, password=None):
     """处理单个content目录"""
     parent_dir = os.path.dirname(content_path)
     zip_path = os.path.join(parent_dir, 'content.zip')
 
     print(f"正在处理: {content_path}")
+    if use_encryption:
+        print(f"使用加密打包，密码长度: {len(password) if password else 0}")
 
     # 创建zip文件
-    if not create_content_zip(content_path, zip_path):
+    if not create_content_zip(content_path, zip_path, password):
         return False
 
     print(f"✓ 已成功创建: {zip_path}")
     print(f"  文件大小: {os.path.getsize(zip_path) / 1024 / 1024:.2f} MB")
+
+    if use_encryption:
+        print(f"  加密方式: ZipCrypto")
 
     # 删除原目录
     if not delete_directory_with_retry(content_path):
@@ -138,6 +199,23 @@ def process_content_directory(content_path):
         return False
 
     return True
+
+
+def is_in_need_encryption_dirs(path, mod_dir):
+    """检查当前路径是否在需要加密的目录下"""
+    # 获取相对于mod_dir的相对路径
+    relative_path = os.path.relpath(path, mod_dir)
+
+    # 分割路径为各个部分
+    path_parts = relative_path.split(os.sep)
+
+    # 检查路径的任一部分是否需要加密
+    need_encryption_dirs = {'new-chinese-mods', 'third-upgrades-archer', 'the-great-expansion'}
+    for path_part in path_parts:
+        if path_part.lower() in need_encryption_dirs :
+         return True
+
+    return False
 
 
 def package_setup_mods(mod_dir):
@@ -155,17 +233,24 @@ def package_setup_mods(mod_dir):
     if not validate_directory(mod_dir):
         return False
 
+    # 预加载加密密码（只需要计算一次）
+    encryption_password = get_encryption_password()
+
+
     try:
         # 遍历目录
         for root_dir, dirs_list, files_list in os.walk(mod_dir, topdown=True):
-            # 检查当前目录是否有名为'content'的子目录（不区分大小写）
+            # 检查当前路径是否在new-chinese-mods目录下
+            use_encryption = is_in_need_encryption_dirs(root_dir, mod_dir) and encryption_password is not None
+
+            # 检查当前目录是否有名为content的子目录（不区分大小写）
             content_dirs = [d for d in dirs_list if d.lower() == 'content']
 
             for content_dir_name in content_dirs:
                 content_path = os.path.join(root_dir, content_dir_name)
 
                 # 处理当前content目录
-                if not process_content_directory(content_path):
+                if not process_content_directory(content_path, use_encryption, encryption_password if use_encryption else None):
                     return False
 
                 # 从dirs列表中移除content目录，防止继续遍历
@@ -189,9 +274,10 @@ if __name__ == "__main__":
     # 测试路径 - 请修改为您实际的路径
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     test_dir = os.path.join(base_dir, "files", "Mods")
+
     # 如果测试路径存在，则执行函数
     if os.path.exists(test_dir):
-       succ = package_setup_mods(test_dir)
-       print("打包%s！" % "成功" if succ else "失败")
+        succ = package_setup_mods(test_dir)
+        print("打包%s！" % ("成功" if succ else "失败"))
     else:
         print(f"目录不存在: {test_dir}")
