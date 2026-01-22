@@ -223,6 +223,18 @@
     ]
   },
   {
+    "name": "新扩展-大扩展包",
+    "desc": "添加这91件新宝物，3名新英雄，25个新辅助技能。 1个新宝屋和4个新法术，将升级可选技能数量设置为3。",
+    "files": {
+      "Mods/the-great-expansion": "Mods/the-great-expansion"
+    },
+    "install_types": [
+      "使用原始UI、音乐（推荐）",
+      "不安装修改种族",
+      "完全安装"
+    ]
+  },
+  {
     "name": "新种族",
     "desc": "数十个VCMI平台新种族。",
     "children": [
