@@ -873,6 +873,18 @@
           "不安装修改种族",
           "完全安装"
         ]
+      },
+      {
+        "name": "新种族-灵墟",
+        "desc": "Agoraphobia大佬设计的玄幻主题种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/xanadu": "Mods/new-chinese-mods/Mods/xanadu"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
       }
     ]
   },
