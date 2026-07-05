@@ -395,10 +395,10 @@
         ]
       },
       {
-        "name": "新种族-树塔",
-        "desc": "用美化版壁垒改的一版矮人族。",
+        "name": "新种族-森林",
+        "desc": "Zeryss大佬基于树塔族进行改造。",
         "files": {
-          "Mods/old-chinese-mods/Mods/evergreen": "Mods/old-chinese-mods/Mods/evergreen"
+          "Mods/sylvan": "Mods/sylvan"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",
@@ -879,6 +879,30 @@
         "desc": "Agoraphobia大佬设计的玄幻主题种族。",
         "files": {
           "Mods/new-chinese-mods/Mods/xanadu": "Mods/new-chinese-mods/Mods/xanadu"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-摇篮",
+        "desc": "黑夜奇幻主题种族。",
+        "files": {
+          "Mods/cradle-town": "Mods/cradle-town"
+        },
+        "install_types": [
+          "使用原始UI、音乐（推荐）",
+          "不安装修改种族",
+          "完全安装"
+        ]
+      },
+      {
+        "name": "新种族-花仙",
+        "desc": "Zeryss大佬基于老花仙种族改进。",
+        "files": {
+          "Mods/Fairytale": "Mods/Fairytale"
         },
         "install_types": [
           "使用原始UI、音乐（推荐）",

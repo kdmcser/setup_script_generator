@@ -210,7 +210,7 @@ def is_in_need_encryption_dirs(path, mod_dir):
     path_parts = relative_path.split(os.sep)
 
     # 检查路径的任一部分是否需要加密
-    need_encryption_dirs = {'new-chinese-mods', 'third-upgrades-archer', 'the-great-expansion'}
+    need_encryption_dirs = {'new-chinese-mods', 'third-upgrades-archer', 'vcmi-enhancement-balance'}
     for path_part in path_parts:
         if path_part.lower() in need_encryption_dirs :
          return True
