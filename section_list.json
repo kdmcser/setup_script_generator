@@ -20,8 +20,8 @@
     ]
   },
   {
-    "name": "原版游戏修正",
-    "desc": "基于原版游戏功能扩展和重大bug修复。",
+    "name": "死亡阴影修正",
+    "desc": "基于死亡阴影功能扩展和重大bug修复。",
     "children": [
       {
         "name": "VCMI额外扩展",
@@ -30,10 +30,10 @@
           "Mods/vcmi-extras": "Mods/vcmi-extras"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装",
-          "原版游戏"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       },
       {
@@ -43,10 +43,10 @@
           "Mods/monolith2way": "Mods/monolith2way"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装",
-          "原版游戏"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       },
       {
@@ -56,10 +56,10 @@
           "Mods/old-chinese-mods/Mods/unlucky": "Mods/old-chinese-mods/Mods/unlucky"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装",
-          "原版游戏"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       },
       {
@@ -69,10 +69,10 @@
           "Mods/more-secondary": "Mods/more-secondary"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装",
-          "原版游戏"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       },
       {
@@ -82,9 +82,10 @@
           "Mods/campaign-heroes": "Mods/campaign-heroes"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       },
       {
@@ -94,9 +95,9 @@
           "Mods/tarnum": "Mods/tarnum"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角"
         ]
       },
       {
@@ -106,9 +107,10 @@
           "Mods/tavern-invite": "Mods/tavern-invite"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       }
     ]
@@ -120,9 +122,10 @@
       "Mods/ziyue's-maps-cn": "Mods/ziyue's-maps-cn"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -132,9 +135,10 @@
       "Mods/fused-artifacts-plus": "Mods/fused-artifacts-plus"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -144,9 +148,10 @@
       "Mods/more-damage-formulas": "Mods/more-damage-formulas"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -156,9 +161,10 @@
       "Mods/morale-luck-extension": "Mods/morale-luck-extension"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -168,9 +174,8 @@
       "Mods/wake-of-gods": "Mods/wake-of-gods"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -180,9 +185,9 @@
       "Mods/hota": "Mods/hota"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角"
     ]
   },
   {
@@ -193,9 +198,8 @@
       "Mods/old-chinese-mods/Mods/hillsOfUnrest": "Mods/old-chinese-mods/Mods/hillsOfUnrest"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -205,9 +209,8 @@
       "Mods/phoenix-as-a-dream": "Mods/phoenix-as-a-dream"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -217,9 +220,8 @@
       "Mods/third-upgrades-archer": "Mods/third-upgrades-archer"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -229,9 +231,8 @@
       "Mods/the-great-expansion": "Mods/the-great-expansion"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -245,9 +246,8 @@
           "Mods/abyss-town": "Mods/abyss-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -257,9 +257,7 @@
           "Mods/old-chinese-mods/Mods/abode-mod": "Mods/old-chinese-mods/Mods/abode-mod"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -269,9 +267,8 @@
           "Mods/asylum-town": "Mods/asylum-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -281,9 +278,8 @@
           "Mods/highlands-town": "Mods/highlands-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -293,9 +289,8 @@
           "Mods/cathedral-town": "Mods/cathedral-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -305,9 +300,7 @@
           "Mods/old-chinese-mods/Mods/Celestial-master": "Mods/old-chinese-mods/Mods/Celestial-master"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -317,9 +310,8 @@
           "Mods/cetatea-town": "Mods/cetatea-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -329,9 +321,7 @@
           "Mods/old-chinese-mods/Mods/christmas": "Mods/old-chinese-mods/Mods/christmas"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -341,9 +331,7 @@
           "Mods/old-chinese-mods/Mods/Ciberium": "Mods/old-chinese-mods/Mods/Ciberium"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -353,9 +341,8 @@
           "Mods/old-chinese-mods/Mods/Court": "Mods/old-chinese-mods/Mods/Court"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -365,9 +352,8 @@
           "Mods/courtyard": "Mods/courtyard"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -377,9 +363,7 @@
           "Mods/old-chinese-mods/Mods/Covenant": "Mods/old-chinese-mods/Mods/Covenant"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -389,9 +373,8 @@
           "Mods/death-valley-town": "Mods/death-valley-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -401,21 +384,19 @@
           "Mods/sylvan": "Mods/sylvan"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
-        "name": "新种族-花仙堡",
+        "name": "新种族-仙境（Exp）",
         "desc": "童话主题城镇，刚出圣龙大佬已将UI重置并优化了兵种配置。",
         "files": {
           "Mods/fairy-town": "Mods/fairy-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -425,9 +406,8 @@
           "Mods/farriery-town": "Mods/farriery-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -437,9 +417,8 @@
           "Mods/forge": "Mods/forge"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -449,9 +428,7 @@
           "Mods/old-chinese-mods/Mods/Glacier": "Mods/old-chinese-mods/Mods/Glacier"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -461,9 +438,7 @@
           "Mods/old-chinese-mods/Mods/Glade": "Mods/old-chinese-mods/Mods/Glade"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -473,9 +448,7 @@
           "Mods/grove": "Mods/grove"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -485,9 +458,8 @@
           "Mods/haven-town": "Mods/haven-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -497,9 +469,8 @@
           "Mods/new-pavilion": "Mods/new-pavilion"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -509,9 +480,8 @@
           "Mods/old-chinese-mods/Mods/Nome": "Mods/old-chinese-mods/Mods/Nome"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -521,9 +491,8 @@
           "Mods/preserve-town": "Mods/preserve-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -533,9 +502,7 @@
           "Mods/old-chinese-mods/Mods/Regna": "Mods/old-chinese-mods/Mods/Regna"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -545,9 +512,8 @@
           "Mods/retreat-town": "Mods/retreat-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -557,9 +523,8 @@
           "Mods/ruins-town": "Mods/ruins-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -569,9 +534,8 @@
           "Mods/tartarus-town": "Mods/tartarus-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -581,9 +545,8 @@
           "Mods/old-chinese-mods/Mods/Technocracy": "Mods/old-chinese-mods/Mods/Technocracy"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -593,9 +556,8 @@
           "Mods/forge2k": "Mods/forge2k"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -605,9 +567,8 @@
           "Mods/refugee-town": "Mods/refugee-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -617,9 +578,7 @@
           "Mods/swarm-town": "Mods/swarm-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -629,9 +588,7 @@
           "Mods/new-chinese-mods/Mods/wild-valley-town": "Mods/new-chinese-mods/Mods/wild-valley-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -641,9 +598,7 @@
           "Mods/horde-town": "Mods/horde-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -653,9 +608,7 @@
           "Mods/atlantis-town": "Mods/atlantis-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -665,9 +618,7 @@
           "Mods/new-chinese-mods/Mods/stalkerbarge-town": "Mods/new-chinese-mods/Mods/stalkerbarge-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -677,9 +628,7 @@
           "Mods/new-chinese-mods/Mods/stlk-undertaker-town": "Mods/new-chinese-mods/Mods/stlk-undertaker-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -689,9 +638,7 @@
           "Mods/new-chinese-mods/Mods/stlk-rookiecamp-town": "Mods/new-chinese-mods/Mods/stlk-rookiecamp-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -701,9 +648,7 @@
           "Mods/new-chinese-mods/Mods/dragonutopiaks-town": "Mods/new-chinese-mods/Mods/dragonutopiaks-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -713,21 +658,18 @@
           "Mods/kremlin-town": "Mods/kremlin-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
-        "name": "新种族望月",
+        "name": "新种族-望月",
         "desc": "望月鸣神天大佬设计的暗夜精灵风格的种族，已平衡到接近原版h3种族强度。",
         "files": {
           "Mods/new-chinese-mods/Mods/nightelf-town": "Mods/new-chinese-mods/Mods/nightelf-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -737,9 +679,7 @@
           "Mods/new-chinese-mods/Mods/blazers-town": "Mods/new-chinese-mods/Mods/blazers-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -749,9 +689,7 @@
           "Mods/might-town": "Mods/might-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -761,9 +699,7 @@
           "Mods/plane-of-earth-town": "Mods/plane-of-earth-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -773,9 +709,7 @@
           "Mods/ark-town": "Mods/ark-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -785,9 +719,7 @@
           "Mods/new-chinese-mods/Mods/alchemy-town": "Mods/new-chinese-mods/Mods/alchemy-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -797,9 +729,7 @@
           "Mods/new-chinese-mods/Mods/electrical-machinery-town": "Mods/new-chinese-mods/Mods/electrical-machinery-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -809,9 +739,7 @@
           "Mods/naga-town": "Mods/naga-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -821,9 +749,8 @@
           "Mods/new-chinese-mods/Mods/moonspire": "Mods/new-chinese-mods/Mods/moonspire"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -833,9 +760,8 @@
           "Mods/new-chinese-mods/Mods/yanHuang": "Mods/new-chinese-mods/Mods/yanHuang"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -845,9 +771,8 @@
           "Mods/new-chinese-mods/Mods/feydom": "Mods/new-chinese-mods/Mods/feydom"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -857,9 +782,19 @@
           "Mods/new-chinese-mods/Mods/shuHan": "Mods/new-chinese-mods/Mods/shuHan"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
+        ]
+      },
+      {
+        "name": "新种族-仙境（东方秘境）",
+        "desc": "东方秘境团队制作的中国风种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/adeptorium": "Mods/new-chinese-mods/Mods/adeptorium"
+        },
+        "install_types": [
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -869,9 +804,7 @@
           "Mods/nevermore-town": "Mods/nevermore-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -881,9 +814,8 @@
           "Mods/new-chinese-mods/Mods/xanadu": "Mods/new-chinese-mods/Mods/xanadu"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -893,9 +825,7 @@
           "Mods/cradle-town": "Mods/cradle-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -905,9 +835,27 @@
           "Mods/Fairytale": "Mods/Fairytale"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
+        ]
+      },
+      {
+        "name": "新种族-花夏",
+        "desc": "如鱼饮水大佬制作的中国风主题种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/HuaXia": "Mods/new-chinese-mods/Mods/HuaXia"
+        },
+        "install_types": [
+          "完全安装（推荐）"
+        ]
+      },
+      {
+        "name": "新种族-沃里",
+        "desc": "acidchalk大佬制作的北欧风新种族。",
+        "files": {
+          "Mods/vori": "Mods/vori"
+        },
+        "install_types": [
+          "完全安装（推荐）"
         ]
       }
     ]
@@ -919,9 +867,7 @@
       "Mods/new-chinese-mods/Mods/h2-towns": "Mods/new-chinese-mods/Mods/h2-towns"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）"
     ]
   },
   {
@@ -935,8 +881,7 @@
           "Mods/crossroads-of-worlds": "Mods/crossroads-of-worlds"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -946,8 +891,7 @@
           "Mods/eldorado-town": "Mods/eldorado-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -957,9 +901,7 @@
           "Mods/old-chinese-mods/Mods/Shelter": "Mods/old-chinese-mods/Mods/Shelter"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       },
       {
@@ -969,9 +911,7 @@
           "Mods/astral-town": "Mods/astral-town"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）"
         ]
       }
     ]
@@ -987,9 +927,8 @@
           "Mods/old-chinese-mods/Mods/Golemcraft": "Mods/old-chinese-mods/Mods/Golemcraft"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -999,9 +938,8 @@
           "Mods/neutral-heroes": "Mods/neutral-heroes"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1011,9 +949,8 @@
           "Mods/old-chinese-mods/Mods/shootingCentaurus": "Mods/old-chinese-mods/Mods/shootingCentaurus"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1023,9 +960,8 @@
           "Mods/creature-heroes": "Mods/creature-heroes"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1041,9 +977,8 @@
           "Mods/new-monsters-pack": "Mods/new-monsters-pack"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1053,9 +988,8 @@
           "Mods/old-chinese-mods/Mods/Castle Creatures": "Mods/old-chinese-mods/Mods/Castle Creatures"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1065,9 +999,8 @@
           "Mods/old-chinese-mods/Mods/neutralCreaturesK": "Mods/old-chinese-mods/Mods/neutralCreaturesK"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1077,9 +1010,8 @@
           "Mods/old-chinese-mods/Mods/Necropolis creatures": "Mods/old-chinese-mods/Mods/Necropolis creatures"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1089,9 +1021,8 @@
           "Mods/old-chinese-mods/Mods/Neutral Rats Demo": "Mods/old-chinese-mods/Mods/Neutral Rats Demo"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1107,9 +1038,8 @@
           "Mods/object-pack": "Mods/object-pack"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1119,9 +1049,8 @@
           "Mods/marketOfTime": "Mods/marketOfTime"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1131,9 +1060,8 @@
           "Mods/land-of-light": "Mods/land-of-light"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1149,9 +1077,8 @@
           "Mods/combine-grail": "Mods/combine-grail"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1161,9 +1088,8 @@
           "Mods/old-chinese-mods/Mods/h2artifacts": "Mods/old-chinese-mods/Mods/h2artifacts"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1174,9 +1100,8 @@
           "Mods/old-chinese-mods/Mods/H4 arts - hero": "Mods/old-chinese-mods/Mods/H4 arts - hero"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1186,9 +1111,8 @@
           "Mods/old-chinese-mods/Mods/witchking-arts": "Mods/old-chinese-mods/Mods/witchking-arts"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1198,9 +1122,8 @@
           "Mods/moon-artifacts": "Mods/moon-artifacts"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1216,9 +1139,8 @@
           "Mods/new-old-spells-plus": "Mods/new-old-spells-plus"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1228,9 +1150,8 @@
           "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts": "Mods/new-chinese-mods/Mods/optional-Spells-Artifacts"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1240,9 +1161,8 @@
           "Mods/adventure-spells-pack": "Mods/adventure-spells-pack"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1252,9 +1172,8 @@
           "Mods/new-summon-spells": "Mods/new-summon-spells"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1266,9 +1185,8 @@
       "Mods/new-skills-pack": "Mods/new-skills-pack"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -1283,9 +1201,8 @@
           "Mods/ab-bad-ending-assets": "Mods/ab-bad-ending-assets"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1295,9 +1212,8 @@
           "Mods/newtown-terrains": "Mods/newtown-terrains"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1313,9 +1229,8 @@
           "Mods/andruids-expansion": "Mods/andruids-expansion"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       },
       {
@@ -1325,9 +1240,8 @@
           "Mods/old-chinese-mods/Mods/Forgotten Field": "Mods/old-chinese-mods/Mods/Forgotten Field"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组"
         ]
       }
     ]
@@ -1339,9 +1253,10 @@
       "Mods/boost-ai": "Mods/boost-ai"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -1351,9 +1266,8 @@
       "Mods/overall-ai-bonus": "Mods/overall-ai-bonus"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组"
     ]
   },
   {
@@ -1363,9 +1277,10 @@
       "Mods/ash-templates": "Mods/ash-templates"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -1375,9 +1290,10 @@
       "Mods/warzyw-templates": "Mods/warzyw-templates"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -1387,9 +1303,10 @@
       "Mods/vcmi-enhancement-fix": "Mods/vcmi-enhancement-fix"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -1399,9 +1316,10 @@
       "Mods/vcmi-enhancement-balance": "Mods/vcmi-enhancement-balance"
     },
     "install_types": [
-      "使用原始UI、音乐（推荐）",
-      "不安装修改种族",
-      "完全安装"
+      "完全安装（推荐）",
+      "精选模组",
+      "深渊号角",
+      "死亡阴影"
     ]
   },
   {
@@ -1415,9 +1333,10 @@
           "Mods/h3e-main-menu-music": "Mods/h3e-main-menu-music"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       },
       {
@@ -1427,9 +1346,10 @@
           "Mods/morns-battlefields": "Mods/morns-battlefields"
         },
         "install_types": [
-          "使用原始UI、音乐（推荐）",
-          "不安装修改种族",
-          "完全安装"
+          "完全安装（推荐）",
+          "精选模组",
+          "深渊号角",
+          "死亡阴影"
         ]
       }
     ]
