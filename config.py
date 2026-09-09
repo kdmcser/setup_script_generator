@@ -4,3 +4,8 @@ install_type_file = "install_type_list.json"
 template_file = "nsis_template"
 output_file = "D:\\vcmi-dev\\vcmi-setup\\vcmi_%s.nsi" % version
 file_dir = "D:\\vcmi-dev\\vcmi-setup\\files"
+
+inno_template_file = "inno_template"
+inno_output_file = "D:\\vcmi-dev\\vcmi-setup\\vcmi_%s.iss" % version
+inno_resource_dir = "D:\\vcmi-dev\\vcmi-setup\\resource\\inno"
+license_file = "D:\\vcmi-dev\\vcmi-setup\\txt\\安装说明.txt"

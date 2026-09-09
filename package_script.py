@@ -99,13 +99,13 @@ def create_content_zip(content_path, zip_path, password=None):
         "a",            # add
         "-tzip",        # zip 格式
         "-mx=0",        # 仅存储
+        "-mcu=on",      # 始终用 UTF-8 文件名（跨平台 + 缓存一致性）
         "-y",           # 自动 yes
     ]
 
     if  password:
         cmd.append(f"-p{password}")
         cmd.append("-mem=ZipCrypto")   # 强制传统 ZipCrypto
-        cmd.append("-mcu=on")
 
     cmd.append(zip_path)
     cmd.append(".")
@@ -210,7 +210,7 @@ def is_in_need_encryption_dirs(path, mod_dir):
     path_parts = relative_path.split(os.sep)
 
     # 检查路径的任一部分是否需要加密
-    need_encryption_dirs = {'new-chinese-mods', 'third-upgrades-archer', 'vcmi-enhancement-balance'}
+    need_encryption_dirs = {'new-chinese-mods', 'third-upgrades-archer', 'vcmi-enhancement-balance', "ziyue's-maps-cn"}
     for path_part in path_parts:
         if path_part.lower() in need_encryption_dirs :
          return True
