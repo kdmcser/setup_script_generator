@@ -125,6 +125,50 @@ begin
     Result := CheckDestDir();
 end;
 
+// 重装时先卸载已安装的旧版本（Inno 默认不会自动卸载，需在开始拷贝文件前自行调用）
+function PrepareToInstall(var NeedsRestart: Boolean): String;
+var
+  OldUninst: String;
+  ResultCode: Integer;
+begin
+  Result := '';
+
+  // Inno 把卸载信息写在 Uninstall\{AppId}_is1 下，AppId 见 [Setup] 段
+  if not RegQueryStringValue(HKLM,
+       'Software\Microsoft\Windows\CurrentVersion\Uninstall\' +
+       '{02E1B3D0-BFE3-4CF8-A408-BA98F2319980}_is1',
+       'UninstallString', OldUninst) then
+    Exit;
+
+  OldUninst := RemoveQuotes(OldUninst);
+  if not FileExists(OldUninst) then
+    Exit;
+
+  if not WizardSilent then
+  begin
+    if MsgBox(
+         '检测到本机已安装 {#MyAppName} 的旧版本。' + #13#10#13#10 +
+         '是否先卸载旧版本，然后再继续安装？',
+         mbConfirmation, MB_YESNO) <> IDYES then
+      Exit;
+  end;
+
+  if not Exec(OldUninst, '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART', '',
+              SW_SHOW, ewWaitUntilTerminated, ResultCode) then
+  begin
+    Result := '无法启动旧版本的卸载程序：' + #13#10 + OldUninst + #13#10#13#10 +
+              '请手动卸载后重新运行本安装程序。';
+    Exit;
+  end;
+
+  if ResultCode <> 0 then
+    Result := '旧版本卸载未正常完成（返回码 ' + IntToStr(ResultCode) + '）。' + #13#10#13#10 +
+              '请手动卸载后重新运行本安装程序。';
+end;
+
+// 组件描述布局（实现见下方，先声明以便窗口缩放时调用）
+procedure LayoutDescLabel; forward;
+
 // 左下角自定义品牌标签
 var
   CustomLabel: TLabel;
@@ -147,6 +191,7 @@ end;
 procedure WizardFormResize(Sender: TObject);
 begin
   UpdateLabelPosition;
+  LayoutDescLabel;
 end;
 
 // ---- 组件详细描述（对应 NSIS 的 MUI_DESCRIPTION_TEXT） ----
@@ -154,8 +199,53 @@ var
   DescLabel: TNewStaticText;
   ComponentDescs: array of string;
 
+// 在组件列表下方预留固定两行的描述区域。
+// 注意：组件列表在页面真正显示时才被 Inno 调整到最终高度，
+// 因此必须按当前实际布局重新计算，否则 300% 等高缩放比例下会与列表重叠。
+procedure LayoutDescLabel;
+var
+  SavedCaption: String;
+  TwoLineHeight, Gap, BottomMargin, ListTop, PageHeight: Integer;
+begin
+  if not Assigned(DescLabel) then
+    Exit;
+
+  SavedCaption := DescLabel.Caption;
+  Gap := ScaleY(8);
+  BottomMargin := ScaleY(8);
+
+  // 用强制换行量出“两行文本”所需的高度
+  DescLabel.Width := WizardForm.ComponentsList.Width;
+  DescLabel.Caption := 'Ag' + #13#10 + 'Ag';
+  DescLabel.Height := 0;
+  WizardForm.AdjustLabelHeight(DescLabel);
+  TwoLineHeight := DescLabel.Height;
+  DescLabel.Caption := SavedCaption;
+
+  ListTop := WizardForm.ComponentsList.Top;
+  PageHeight := WizardForm.SelectComponentsPage.ClientHeight;
+
+  // 让组件列表为描述区域腾出空间，保证两行描述完整显示在列表下方
+  WizardForm.ComponentsList.Height := PageHeight - ListTop - TwoLineHeight - Gap - BottomMargin;
+
+  DescLabel.Left := WizardForm.ComponentsList.Left;
+  DescLabel.Width := WizardForm.ComponentsList.Width;
+  DescLabel.Height := TwoLineHeight;
+  DescLabel.Top := WizardForm.ComponentsList.Top + WizardForm.ComponentsList.Height + Gap;
+end;
+
+// 隐藏 Inno 内置的“所需磁盘空间”标签：它的位置与组件描述标签重叠，
+// 即使描述标签盖在上面，仍会露出半截文字残影。
+procedure HideDiskSpaceLabel;
+begin
+  WizardForm.ComponentsDiskSpaceLabel.Visible := False;
+  WizardForm.ComponentsDiskSpaceLabel.Left := -ScaleX(30000);
+end;
+
 procedure UpdateComponentDescByIndex(Index: Integer);
 begin
+  HideDiskSpaceLabel;
+
   if not Assigned(DescLabel) then
     Exit;
   if (Index >= 0) and (Index < GetArrayLength(ComponentDescs)) then
@@ -201,11 +291,7 @@ ${__component_descs__}
   DescLabel.Parent := WizardForm.SelectComponentsPage;
   DescLabel.AutoSize := False;
   DescLabel.WordWrap := True;
-  DescLabel.Left := WizardForm.ComponentsList.Left;
-  DescLabel.Top := WizardForm.ComponentsList.Top + WizardForm.ComponentsList.Height + ScaleY(8);
-  DescLabel.Width := WizardForm.ComponentsList.Width;
-  DescLabel.Height := ScaleY(34);
-  DescLabel.Caption := '';
+  LayoutDescLabel;
   WizardForm.ComponentsList.OnClick := @ComponentsListClick;
   WizardForm.ComponentsList.OnClickCheck := @ComponentsListClickCheck;
   WizardForm.ComponentsList.OnKeyDown := @ComponentsListKeyDown;
@@ -239,5 +325,12 @@ begin
   begin
     CustomLabel.BringToFront;
     UpdateLabelPosition;
+  end;
+
+  // 此时组件列表已按页面实际尺寸完成布局，需要重新计算描述位置与两行高度
+  if CurPageID = wpSelectComponents then
+  begin
+    LayoutDescLabel;
+    UpdateComponentDesc;
   end;
 end;
