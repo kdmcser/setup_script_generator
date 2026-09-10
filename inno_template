@@ -32,6 +32,10 @@ WizardSmallImageFile=${__wizard_small_image_file__}
 OutputBaseFilename=vcmi_setup_{#MyAppVersion}
 LicenseFile=${__license_file__}
 DisableWelcomePage=no
+; Inno 6/7 默认给 Setup 启用 RedirectionGuard，该缓解策略会被子进程继承，
+; 导致安装完成后 [Run] 拉起的 launcher 无法遍历用户数据目录里由非提权进程创建的
+; junction/符号链接（Windows 448 ERROR_UNTRUSTED_MOUNT_POINT）。关闭它。
+RedirectionGuard=no
 
 [Languages]
 Name: "chinesesimplified"; MessagesFile: "${__language_file__}"
