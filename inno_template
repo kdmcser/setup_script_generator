@@ -203,6 +203,17 @@ var
   DescLabel: TNewStaticText;
   ComponentDescs: array of string;
 
+// Inno 内置事件处理器的原始引用。
+// ComponentsList.OnClickCheck / TypesCombo.OnChange 等属性指向 Inno 自身的实现
+// （复选框勾选切换、按安装类型应用组件状态）。直接赋新值会把这些内置逻辑整个
+// 替换掉，导致组件全部保持默认勾选且点击无效，因此必须先保存再在自定义处理器里转发。
+var
+  DefaultCompClick: TNotifyEvent;
+  DefaultCompClickCheck: TNotifyEvent;
+  DefaultCompKeyDown: TKeyEvent;
+  DefaultCompKeyUp: TKeyEvent;
+  DefaultTypeChange: TNotifyEvent;
+
 // 在组件列表下方预留固定两行的描述区域。
 // 注意：组件列表在页面真正显示时才被 Inno 调整到最终高度，
 // 因此必须按当前实际布局重新计算，否则 300% 等高缩放比例下会与列表重叠。
@@ -265,26 +276,36 @@ end;
 
 procedure ComponentsListClick(Sender: TObject);
 begin
+  if DefaultCompClick <> nil then
+    DefaultCompClick(Sender);
   UpdateComponentDesc;
 end;
 
 procedure ComponentsListClickCheck(Sender: TObject);
 begin
+  if DefaultCompClickCheck <> nil then
+    DefaultCompClickCheck(Sender);
   UpdateComponentDesc;
 end;
 
 procedure ComponentsListKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
+  if DefaultCompKeyDown <> nil then
+    DefaultCompKeyDown(Sender, Key, Shift);
   UpdateComponentDesc;
 end;
 
 procedure ComponentsListKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
+  if DefaultCompKeyUp <> nil then
+    DefaultCompKeyUp(Sender, Key, Shift);
   UpdateComponentDesc;
 end;
 
 procedure TypesComboChange(Sender: TObject);
 begin
+  if DefaultTypeChange <> nil then
+    DefaultTypeChange(Sender);
   UpdateComponentDesc;
 end;
 
@@ -296,6 +317,14 @@ ${__component_descs__}
   DescLabel.AutoSize := False;
   DescLabel.WordWrap := True;
   LayoutDescLabel;
+
+  // 先保存 Inno 内置处理器，再替换为自己的处理器（自定义处理器内部会转发）
+  DefaultCompClick := WizardForm.ComponentsList.OnClick;
+  DefaultCompClickCheck := WizardForm.ComponentsList.OnClickCheck;
+  DefaultCompKeyDown := WizardForm.ComponentsList.OnKeyDown;
+  DefaultCompKeyUp := WizardForm.ComponentsList.OnKeyUp;
+  DefaultTypeChange := WizardForm.TypesCombo.OnChange;
+
   WizardForm.ComponentsList.OnClick := @ComponentsListClick;
   WizardForm.ComponentsList.OnClickCheck := @ComponentsListClickCheck;
   WizardForm.ComponentsList.OnKeyDown := @ComponentsListKeyDown;
