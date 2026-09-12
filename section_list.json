@@ -955,7 +955,7 @@
       },
       {
         "name": "新英雄-生物英雄",
-        "desc": "添加一位VCMI新英雄。",
+        "desc": "添加三位VCMI新英雄。",
         "files": {
           "Mods/creature-heroes": "Mods/creature-heroes"
         },
