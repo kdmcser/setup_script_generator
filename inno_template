@@ -134,6 +134,7 @@ function PrepareToInstall(var NeedsRestart: Boolean): String;
 var
   OldUninst: String;
   ResultCode: Integer;
+  I: Integer;
 begin
   Result := '';
 
@@ -163,6 +164,17 @@ begin
     Result := '无法启动旧版本的卸载程序：' + #13#10 + OldUninst + #13#10#13#10 +
               '请手动卸载后重新运行本安装程序。';
     Exit;
+  end;
+
+  // Inno 卸载器会把自身复制到 %TEMP% 再运行“克隆”来执行实际删除：Exec 拿到退出码时克隆
+  // 可能仍在收尾，原 unins*.exe 尚未删除。若此时就开始拷贝文件，新安装会与克隆的删除动作
+  // 在同一目录上竞争。这里轮询等旧卸载器真正消失（最多 10 秒）再继续。
+  // 注意：Inno 脚本没有 GetTickCount，只能用 Sleep + 计数封顶。
+  for I := 1 to 40 do
+  begin
+    if not FileExists(OldUninst) then
+      Break;
+    Sleep(250);
   end;
 
   if ResultCode <> 0 then
