@@ -76,7 +76,7 @@ def create_content_zip(content_path, zip_path, password=None):
     使用固定路径的 7-Zip 创建 zip：
     - content_path 这一层不进入 zip
     - 仅存储（-mx=0）
-    - 有 password 时使用 ZipCrypto
+    - 有 password 时使用 WinZip AES-256（不用 ZipCrypto，后者有已知明文攻击风险）
     - 使用固定路径: C:\\Program Files\\7-Zip\\7z.exe
     """
 
@@ -105,7 +105,7 @@ def create_content_zip(content_path, zip_path, password=None):
 
     if  password:
         cmd.append(f"-p{password}")
-        cmd.append("-mem=ZipCrypto")   # 强制传统 ZipCrypto
+        cmd.append("-mem=AES256")   # WinZip AES-256；读取端（VCMI / modpack-tool）都支持
 
     cmd.append(zip_path)
     cmd.append(".")
@@ -187,7 +187,7 @@ def process_content_directory(content_path, use_encryption=False, password=None)
     print(f"  文件大小: {os.path.getsize(zip_path) / 1024 / 1024:.2f} MB")
 
     if use_encryption:
-        print(f"  加密方式: ZipCrypto")
+        print(f"  加密方式: WinZip AES-256")
 
     # 删除原目录
     if not delete_directory_with_retry(content_path):
