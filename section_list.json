@@ -787,10 +787,32 @@
         ]
       },
       {
-        "name": "新种族-仙境城",
+        "name": "新种族-仙境",
         "desc": "东方秘境团队制作的中国风种族。",
         "files": {
           "Mods/new-chinese-mods/Mods/adeptorium": "Mods/new-chinese-mods/Mods/adeptorium"
+        },
+        "install_types": [
+          "完全安装（推荐）",
+          "精选模组"
+        ]
+      },
+      {
+        "name": "新种族-地府",
+        "desc": "东方秘境团队制作的中国风种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/karmicCourt": "Mods/new-chinese-mods/Mods/karmicCourt"
+        },
+        "install_types": [
+          "完全安装（推荐）",
+          "精选模组"
+        ]
+      },
+      {
+        "name": "新种族-梁山",
+        "desc": "东方秘境团队制作的中国风种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/liangshan": "Mods/new-chinese-mods/Mods/liangshan"
         },
         "install_types": [
           "完全安装（推荐）",
@@ -839,7 +861,7 @@
         ]
       },
       {
-        "name": "新种族-花夏",
+        "name": "新种族-花夏城",
         "desc": "如鱼饮水大佬制作的中国风主题种族。",
         "files": {
           "Mods/new-chinese-mods/Mods/HuaXia": "Mods/new-chinese-mods/Mods/HuaXia"
@@ -853,6 +875,16 @@
         "desc": "acidchalk大佬制作的北欧风新种族。",
         "files": {
           "Mods/vori": "Mods/vori"
+        },
+        "install_types": [
+          "完全安装（推荐）"
+        ]
+      },
+      {
+        "name": "新种族-龙渊",
+        "desc": "潇潇梧桐大佬制作的中国风新种族。",
+        "files": {
+          "Mods/new-chinese-mods/Mods/veinwarden": "Mods/new-chinese-mods/Mods/veinwarden"
         },
         "install_types": [
           "完全安装（推荐）"
