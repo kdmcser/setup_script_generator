@@ -5,6 +5,7 @@
     "files": {
       "Main": ".",
       "Map Editor": ".",
+      "Tools": ".",
       "Mods/simplified-chinese-translation": "Mods/simplified-chinese-translation",
       "Mod Frameworks/old-chinese-mods": "Mods/old-chinese-mods",
       "Mod Frameworks/new-chinese-mods": "Mods/new-chinese-mods",
